@@ -9,3 +9,4 @@ angular.module('grovemade', ['ui-router']).config(function($stateProvider, $urlR
     controller:'homeCtrl'
   })
 })
+ 
