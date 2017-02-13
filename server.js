@@ -8,7 +8,7 @@ const port = 3050;
 
 const app = module.exports = express();
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname ));
 // console.log(__dirname);
 app.use(session({
   secret: config.sessionSecret,
@@ -16,14 +16,14 @@ app.use(session({
   saveUninitialized: false
 }));
 
-const conn = massive.connectSync({
-  connectionString : "postgres://postgres:@localhost/kombuchadog-clone"
-});
-app.set('db', conn);
+// const conn = massive.connectSync({
+//   connectionString : "postgres://postgres:@localhost/kombuchadog-clone"
+// });
+// app.set('db', conn);
 const db = app.get('db');
 const productsController = require('./productsController');
 
-app.get('/shop', productsController.getShop);
+// app.get('/shop', productsController.getShop);
 
 
 app.listen(3050, () => {
