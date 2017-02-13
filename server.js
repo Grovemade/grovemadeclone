@@ -8,7 +8,7 @@ const port = 3050;
 
 const app = module.exports = express();
 app.use(bodyParser.json());
-app.use(express.static(__dirname ));
+app.use(express.static(__dirname + '/public' ));
 // console.log(__dirname);
 app.use(session({
   secret: config.sessionSecret,
