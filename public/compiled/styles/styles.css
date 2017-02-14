@@ -1,0 +1,51 @@
+
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  width: 100%;
+  /*background-color: gray;*/
+  text-decoration: none; }
+
+.nav a {
+  text-decoration: none;
+  color: black; }
+
+.nav img {
+  height: 77px;
+  width: 305px; }
+
+#navbar-logo {
+  position: fixed;
+  left: 30px;
+  height: 53px;
+  width: 179px;
+  float: left;
+  box-sizing: border-box;
+  /*position: relative;*/ }
+
+#nav-bar-center {
+  padding-left: 10px; }
+
+.nav-bar-wrapper {
+  float: left; }
+
+.nav-newsletter-cart-wrapper {
+  width: 306px;
+  position: fixed;
+  right: 30px; }
+
+.nav-newsletter {
+  float: left;
+  position: relative;
+  top: 11px;
+  right: -46px; }
+
+.nav-cart img {
+  float: right;
+  position: relative;
+  top: -3px;
+  height: 40px;
+  width: 45px; }
