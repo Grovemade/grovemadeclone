@@ -1,3 +1,7 @@
+* {
+  margin: 0px;
+}
+
 .nav {
   position: fixed;
   display: flex;
@@ -7,56 +11,67 @@
   width: 100%;
   /*background-color: gray;*/
   text-decoration: none;
+  z-index: 10;
 }
 .nav a{
   text-decoration: none;
-  color: black;
+  text-shadow: 1px 1px 4px #000;
+  color: white;
 }
 
 .nav img{
   height: 77px;
   width: 305px;
+  z-index: 10;
 }
 
 #navbar-logo {
   position: fixed;
+  top: -5px;
   left: 30px;
   height: 53px;
   width: 179px;
   float: left;
   // background-color: blue;
   box-sizing: border-box;
-  /*position: relative;*/
+  z-index: 10;
 }
 
 #nav-bar-center {
   padding-left: 10px;
   // background-color: pink;
+  z-index: 10;
 }
 
 .nav-bar-wrapper {
   float: left;
+  font-size: 18px;
   // background-color: pink;
+  z-index: 10;
 }
 
 .nav-newsletter-cart-wrapper{
-  width: 306px;
+  width: 217px;
   position: fixed;
-  right: 30px;
+  right: 55px;
   // background-color: red;
+  z-index: 10;
 }
 
 .nav-newsletter {
   float: left;
+  font-size: 18px;
   position: relative;
-  top: 11px;
+  top: 2px;
   right: -46px;
+  z-index: 10;
 }
 
 .nav-cart img{
   float: right;
   position: relative;
-  top: -3px;
-  height: 40px;
-  width: 45px;
+  top: 1px;
+  height: 26px;
+  width: 25px;
+  z-index: 10;
 }
