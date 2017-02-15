@@ -3,9 +3,28 @@
   width: 100%;
   margin: 0; }
 
-.home-container img {
-  height: 100%;
-  width: 100%; }
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+.carouselTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 40vh;
+  padding: 0px 50px 0px 50px; }
+
+.homeSection {
+  max-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 * {
   margin: 0px; }
