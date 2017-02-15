@@ -1,4 +1,4 @@
-angular.module('grovemade', ['ui.router'])
+angular.module('grovemade', ['ui.router','ui.bootstrap'])
 .config(function($stateProvider, $urlRouterProvider){
 
   $urlRouterProvider.otherwise('/')
