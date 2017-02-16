@@ -2,9 +2,9 @@
 <section ng-class="photoClass"class='homeSection' style="background-image: url('{{selected}}'); background-size: 100% 100vh; background-repeat: no-repeat">
 <div class='carouselTitle'>
 <div ng-click="previous(); stop()"><</div>
-<div class="title">
+<div class="home-title">
   <div>{{title}}</div>
-  <div>{{color}}</div>
+  <div class='home-color'>{{color}}</div>
   <button>Shop Now</button>
 </div>
 <div ng-click="next(); stop()">></div>
@@ -12,9 +12,9 @@
 </section>
 <div class='carouselTitle'>
 <div ng-click="previous(); stop()"><</div>
-<div class="title">
+<div class="home-title">
   <div>{{nextTitle}}</div>
-  <div>{{nextColor}}</div>
+  <div class='home-color'>{{nextColor}}</div>
   <button>Shop Now</button>
 </div>
 <div ng-click="next(); stop()">></div>

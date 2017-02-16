@@ -5,31 +5,39 @@ angular.module('grovemade')
     $scope.slides = [
       {
         image: '/img/homemarq-walnut-desk-collection-G2_1.jpg',
-        title: 'Desk Collection'
+        title: 'DESK COLLECTION',
+        color: 'IN WALNUT OR MAPLE'
       },
       {
         image: '/img/homemarq-watch-02-A3_1.jpg',
-        title: 'Wood Watch'
+        title: 'WOOD WATCH',
+        color: 'MODEL 02'
       },
       {
         image: '/img/homemarq-wallet-A4_1.jpg',
-        title: 'Everyday Carry'
+        title: 'EVERYDAY CARRY',
+        color: 'COLLECTION'
       },
       {
         image: '/img/homemarq-wallet-case-A2_1.jpg',
-        title: 'Wallet Case'
+        title: 'WALLET CASE',
+        color: 'FOR iPHONE 6 & 7'
       },
       {
         image: '/img/homemarq-wood-iphone-6-case-B2_1.jpg',
-        title: 'iPhone 7 Cases'
+        title: 'iPHONE   7 CASES',
+        color: 'IN WALNUT OR MAPLE'
+
       },
       {
         image: '/img/homemarq-bifold-wallet-E1_1.jpg',
-        title: 'Bifold Wallet'
+        title: 'BIFOLD WALLET',
+        color: 'IN BLACK OR TAN'
       },
       {
         image: '/img/homemarq-wood-speakers-A1_2.jpg',
-        title: 'Wood Speakers'
+        title: 'WOOD SPEAKERS',
+        color: 'IN WALNUT OR MAPLE'
       }
     ];
     $scope.photoClass = []
@@ -46,12 +54,14 @@ angular.module('grovemade')
       }
       $scope.nextPhoto = $scope.slides[index].image
       $scope.nextTitle = $scope.slides[index].title
+      $scope.nextColor = $scope.slides[index].color
 
       $scope.photoClass.splice(0, 1, 'animated fadeOut')
       $timeout(function(){
         $scope.photoClass.splice(0, 1, 'animated fadeIn')
         $scope.selected = $scope.slides[index].image
         $scope.title = $scope.slides[index].title
+        $scope.color = $scope.slides[index].color
       }, 500)
     }
 
@@ -62,13 +72,14 @@ angular.module('grovemade')
       }
       $scope.nextPhoto = $scope.slides[index].image
       $scope.nextTitle = $scope.slides[index].title
+      $scope.nextColor = $scope.slides[index].color
 
       $scope.photoClass.splice(0, 1, 'animated fadeOut')
       $timeout(function(){
         $scope.photoClass.splice(0, 1, 'animated fadeIn')
         $scope.selected = $scope.slides[index].image
         $scope.title = $scope.slides[index].title
-
+        $scope.color = $scope.slides[index].color
       }, 500)
     }
     $scope.next()
