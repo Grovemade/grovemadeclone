@@ -1,14 +1,52 @@
-.title {
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {font-family: "DINNextRoundedLTW01-Regular";
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg");
+}
+
+$font: "DINNextRoundedLTW01-Regular";
+$hover: rgba(255,255,255,0.3);
+
+
+.home-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  font-size: 80px;
-  color: white;
+  width: 525px;
+  // height: px;
+  word-wrap: break-word;
+  // text-shadow: 1px 1px 4px #000;
+  // background-color: aqua;
+  font-size: 90px;
+  letter-spacing: 2.3px;
+  font-family: $font;
+  text-align: center;
+  overflow: auto;
 }
-.title button {
-  border: 2px solid white;
+.home-title button {
+  border: 3px solid white;
   color: white;
+  background-color: transparent;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 146px;
+  padding: 8px 10px 8px 10px;
+}
+.home-color {
+  // background-color: pink;
+  // text-shadow: 1px 1px 4px #000;
+  font-size: 20px;
+  letter-spacing: 7.3px;
+  font-family: $font;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 .carouselTitle {
   display: flex;
@@ -19,15 +57,19 @@
   height: 40vh;
   padding-left: 50px;
   padding-right: 50px;
+  color: white;
 }
 .homeSection {
-  width: 100%;
+  width: 100vw;
+  // height: 703px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  // background-attachment: fixed;
 }
 .homeSection div {
   color: white;
+  // background-attachment: fixed;
 }

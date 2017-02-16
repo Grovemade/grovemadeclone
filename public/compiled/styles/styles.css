@@ -3,17 +3,42 @@
   width: 100%;
   margin: 0; }
 
-.title {
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {
+  font-family: "DINNextRoundedLTW01-Regular";
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg"); }
+
+.home-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  font-size: 80px;
-  color: white; }
+  width: 525px;
+  word-wrap: break-word;
+  font-size: 90px;
+  letter-spacing: 2.3px;
+  font-family: "DINNextRoundedLTW01-Regular";
+  text-align: center;
+  overflow: auto; }
 
-.title button {
-  border: 2px solid white;
-  color: white; }
+.home-title button {
+  border: 3px solid white;
+  color: white;
+  background-color: transparent;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 146px;
+  padding: 8px 10px 8px 10px; }
+
+.home-color {
+  font-size: 20px;
+  letter-spacing: 7.3px;
+  font-family: "DINNextRoundedLTW01-Regular";
+  padding-top: 35px;
+  padding-bottom: 35px; }
 
 .carouselTitle {
   display: flex;
@@ -23,10 +48,11 @@
   width: 100%;
   height: 40vh;
   padding-left: 50px;
-  padding-right: 50px; }
+  padding-right: 50px;
+  color: white; }
 
 .homeSection {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,6 +61,12 @@
 
 .homeSection div {
   color: white; }
+
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {
+  font-family: "DINNextRoundedLTW01-Regular";
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg"); }
 
 * {
   margin: 0px; }
@@ -46,13 +78,13 @@
   justify-content: center;
   height: 72px;
   width: 100%;
-  /*background-color: gray;*/
   text-decoration: none;
-  z-index: 10; }
+  z-index: 10;
+  padding-top: 20px; }
 
 .nav a {
   text-decoration: none;
-  text-shadow: 1px 1px 4px #000;
+  font-family: "DINNextRoundedLTW01-Regular";
   color: white; }
 
 .nav img {
@@ -60,24 +92,36 @@
   width: 305px;
   z-index: 10; }
 
-#navbar-logo {
+#navbar-logos {
   position: fixed;
-  top: -5px;
   left: 30px;
-  height: 53px;
-  width: 179px;
+  width: 280px;
   float: left;
-  box-sizing: border-box;
-  z-index: 10; }
+  z-index: 10;
+  padding-right: 10px; }
+  #navbar-logos path {
+    fill: white; }
 
 #nav-bar-center {
-  padding-left: 10px;
+  margin: 0 15px;
   z-index: 10; }
+
+.sliding-u-t-b {
+  border-bottom: 0px solid transparent;
+  transition: 0.5s ease; }
+
+.sliding-u-t-b:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
+  border-radius: .7px; }
 
 .nav-bar-wrapper {
   float: left;
-  font-size: 18px;
-  z-index: 10; }
+  font-size: 15px;
+  letter-spacing: 2.3px;
+  z-index: 10;
+  text-transform: uppercase;
+  padding-left: 20px; }
 
 .nav-newsletter-cart-wrapper {
   width: 217px;
@@ -87,16 +131,19 @@
 
 .nav-newsletter {
   float: left;
-  font-size: 18px;
+  font-size: 15px;
+  letter-spacing: 2.3px;
+  text-transform: uppercase;
   position: relative;
-  top: 2px;
+  top: 5px;
   right: -46px;
   z-index: 10; }
 
-.nav-cart img {
+.nav-cart {
+  color: white;
   float: right;
   position: relative;
-  top: 1px;
+  top: 5px;
   height: 26px;
-  width: 25px;
+  width: 22px;
   z-index: 10; }
