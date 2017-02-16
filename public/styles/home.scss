@@ -3,6 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  font-size: 80px;
+  color: white;
+}
+.title button {
+  border: 2px solid white;
+  color: white;
 }
 .carouselTitle {
   display: flex;
@@ -11,13 +17,17 @@
   position: absolute;
   width: 100%;
   height: 40vh;
-  padding: 0px 50px 0px 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .homeSection {
-  max-height: 100vh;
-  max-width: 100%;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.homeSection div {
+  color: white;
 }
