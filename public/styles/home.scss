@@ -39,6 +39,10 @@ $hover: rgba(255,255,255,0.3);
   width: 146px;
   padding: 8px 10px 8px 10px;
 }
+.home-title button:hover {
+  background-color: transparent;
+  opacity: .5;
+}
 .home-color {
   // background-color: pink;
   // text-shadow: 1px 1px 4px #000;
@@ -55,8 +59,6 @@ $hover: rgba(255,255,255,0.3);
   position: absolute;
   width: 100%;
   height: 40vh;
-  padding-left: 50px;
-  padding-right: 50px;
   color: white;
 }
 .homeSection {

@@ -21,6 +21,18 @@
   z-index: 10;
   padding-top: 20px;
 }
+
+.sticky-nav {
+  position: fixed;
+  background-color: rgb(66, 66, 66);
+  height: 60px;
+  top: 0;
+  margin-top: 0;
+  z-index: 11;
+  padding-top: 1px;
+}
+
+
 .nav a{
   text-decoration: none;
   // text-shadow: 1px 1px 4px #000;
