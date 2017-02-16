@@ -9,6 +9,121 @@
   src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
   src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg"); }
 
+footer {
+  overflow: auto;
+  position: relative; }
+
+.footer-wrapper {
+  width: 100%;
+  height: 500px;
+  background-color: #4a4d51;
+  color: white;
+  overflow: auto;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 70px; }
+
+.footer-content {
+  overflow: auto; }
+  .footer-content p {
+    font-size: 11px;
+    font-family: "DINNextRoundedLTW01-Regular";
+    letter-spacing: 2px;
+    margin-top: 20px; }
+
+.social-icon {
+  color: white; }
+
+.newsletter-signup {
+  margin-top: 80px;
+  margin-bottom: 30px; }
+  .newsletter-signup input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    font-family: "DINNextRoundedLTW01-Regular";
+    min-width: 275px;
+    padding: 10px 20px;
+    padding-left: 0;
+    letter-spacing: .1em;
+    font-weight: 300; }
+  .newsletter-signup button {
+    border: 2px solid white;
+    background: transparent;
+    margin-left: 10px;
+    height: 40px;
+    width: 80px;
+    line-height: 40px;
+    vertical-align: bottom;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: white;
+    padding: 0 0; }
+  .newsletter-signup p {
+    margin: 32px 0;
+    font-weight: 300; }
+
+.social-media-footer {
+  margin-top: 95px; }
+  .social-media-footer p {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px; }
+  .social-media-footer .social-links {
+    margin-top: 25px; }
+  .social-media-footer .social-icon {
+    font-size: 30px;
+    margin: 0 11px; }
+
+.footer-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: "DINNextRoundedLTW01-Regular"; }
+  .footer-bar .footer-bar-left {
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1.6px;
+    display: inline-block;
+    height: 50px;
+    padding-left: 15px; }
+    .footer-bar .footer-bar-left a {
+      margin: 0 10px; }
+  .footer-bar .footer-bar-center {
+    font-size: 11px;
+    letter-spacing: 1.3px;
+    display: inline-block;
+    height: 50px;
+    margin-left: -90px;
+    text-align: center; }
+    .footer-bar .footer-bar-center a {
+      margin: 0 10px; }
+  .footer-bar .footer-bar-right {
+    float: right;
+    font-size: 11px;
+    letter-spacing: 1.3px;
+    display: inline-block;
+    height: 50px;
+    padding-right: 15px; }
+    .footer-bar .footer-bar-right a {
+      margin: 0 10px; }
+
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {
+  font-family: "DINNextRoundedLTW01-Regular";
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg"); }
+
 .home-title {
   display: flex;
   flex-direction: column;
