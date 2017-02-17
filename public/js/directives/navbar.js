@@ -14,10 +14,28 @@ angular.module('grovemade').directive('navbar', () => {
             }
         });
       });
+
+      var isActive = false;
+
+      $('.newsletter-open').on('click', function() {
+      	if (isActive) {
+          $('.newsletter-wrapper').removeClass('hide-newsletter');
+      	} else {
+      		$('.newsletter-wrapper').addClass('hide-newsletter');
+      	}
+      	isActive = !isActive;
+      });
+
+      $('.newsletter-close').on('click', function() {
+      	if (isActive) {
+          $('.newsletter-wrapper').addClass('hide-newsletter');
+      	} else {
+      		$('.newsletter-wrapper').removeClass('hide-newsletter');
+      	}
+      	isActive = !isActive;
+      });
+
+
     }
   };
 });
-
-
-// $('.nav').addClass('sticky-nav');
-// $('.nav').removeClass('sticky-nav');
