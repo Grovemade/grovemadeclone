@@ -1,0 +1,30 @@
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {font-family: "DINNextRoundedLTW01-Regular";
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg");
+}
+
+$font: "DINNextRoundedLTW01-Regular";
+
+
+.journal-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/img/journal-image.jpg");
+    height: 400px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    h1{
+      font-family: $font;
+      color: white;
+      font-size: 60px;
+      letter-spacing: 0.2em;
+      font-weight: 100;
+    }
+}
