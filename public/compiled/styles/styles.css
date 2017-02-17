@@ -1,3 +1,10 @@
+.about-header {
+  background: url("/img/about-2016-C3_2.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover; }
+
 .carousel-inner > .item > img {
   height: 100vh !important;
   width: 100%;
@@ -201,6 +208,28 @@ footer {
   src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
   src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg"); }
 
+.journal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/journal-image.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover; }
+  .journal-header h1 {
+    font-family: "DINNextRoundedLTW01-Regular";
+    color: white;
+    font-size: 60px;
+    letter-spacing: 0.2em;
+    font-weight: 100; }
+
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {
+  font-family: "DINNextRoundedLTW01-Regular";
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg"); }
+
 * {
   margin: 0px; }
 
@@ -385,3 +414,25 @@ footer {
   font-family: "DINNextRoundedLTW01-Regular";
   src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
   src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg"); }
+
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {
+  font-family: "DINNextRoundedLTW01-Regular";
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg"); }
+
+.shop-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/collections-desk-planters-A2_10.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover; }
+  .shop-header h1 {
+    font-family: "DINNextRoundedLTW01-Regular";
+    color: white;
+    font-size: 60px;
+    letter-spacing: 0.4em;
+    font-weight: 100; }
