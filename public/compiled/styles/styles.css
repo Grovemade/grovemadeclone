@@ -308,7 +308,8 @@ footer {
   position: relative;
   top: 5px;
   right: -46px;
-  z-index: 10; }
+  z-index: 10;
+  cursor: pointer; }
 
 .nav-cart {
   color: white;
@@ -408,6 +409,60 @@ footer {
 
 .hide-newsletter {
   display: none; }
+
+.sticky-cart {
+  height: auto;
+  width: 31%;
+  background-color: #F6F7F9;
+  position: absolute;
+  text-align: center;
+  right: 20px;
+  top: 2px;
+  z-index: 300;
+  border: none;
+  display: none; }
+  .sticky-cart .your-cart {
+    width: 100.13%;
+    background-color: #424242;
+    height: 59px;
+    color: white;
+    text-align: left;
+    border: none; }
+    .sticky-cart .your-cart h2 {
+      font-family: "DINNextRoundedLTW01-Regular";
+      margin-left: 20px;
+      line-height: 60px;
+      font-weight: 100;
+      letter-spacing: 11px; }
+  .sticky-cart h4 {
+    font-family: "DINNextRoundedLTW01-Regular";
+    font-weight: 100;
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    margin-left: 4%; }
+  .sticky-cart button {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 91%;
+    border: none;
+    text-align: center;
+    background-color: #424242;
+    color: white;
+    font-size: 23px;
+    letter-spacing: 6px; }
+  .sticky-cart p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #f69368; }
+  .sticky-cart .hr_lookalike {
+    background-color: #121212;
+    height: 0.5px;
+    width: 91%;
+    margin: auto;
+    margin-bottom: 15px; }
 
 @import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
 @font-face {
