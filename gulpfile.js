@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 var babel = require('gulp-babel');
 var plumber = require('gulp-plumber');
 var sourcemaps = require('gulp-sourcemaps');
+var watch = require('gulp-watch');
 
 const paths = {
   scssSource: './public/styles/**/*.scss',
@@ -28,8 +29,18 @@ gulp.task('frontjs', () => {
   .pipe(sourcemaps.write())
   .pipe(gulp.dest(paths.jsDest));
 });
-gulp.task('watch', () =>  {
-  gulp.watch(paths.jsSource, ['frontjs']);
-  gulp.watch(paths.scssSource, ['styles']);
-});
+// gulp.task('watch', () =>  {
+//   gulp.watch(paths.jsSource, ['frontjs']);
+//   gulp.watch(paths.scssSource, ['styles']);
+// });
+
+gulp.task('watch', () => {
+  watch(paths.jsSource, {usePolling:true}, () => {
+    gulp.start('frontjs')
+  })
+  watch(paths.scssSource, {usePolling:true}, () => {
+    gulp.start('styles')
+  })
+})
+
 gulp.task('default', ['watch', 'frontjs', 'styles']);
