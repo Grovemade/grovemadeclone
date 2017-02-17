@@ -15,27 +15,35 @@ angular.module('grovemade').directive('navbar', () => {
         });
       });
 
-      var isActive = false;
+      // var isActive = false;
 
       $('.newsletter-open').on('click', function() {
-      	if (isActive) {
+        // isActive = !isActive;
+      	// if (isActive) {
+          // console.log(isActive);
           $('.newsletter-wrapper').removeClass('hide-newsletter');
-      	} else {
-      		$('.newsletter-wrapper').addClass('hide-newsletter');
-      	}
-      	isActive = !isActive;
+      	// } else {
+      		// $('.newsletter-wrapper').addClass('hide-newsletter');
+      	// }
+
       });
 
       $('.newsletter-close').on('click', function() {
-      	if (isActive) {
+        // isActive = !isActive;
+      	// if (!isActive) {
           $('.newsletter-wrapper').addClass('hide-newsletter');
-      	} else {
-      		$('.newsletter-wrapper').removeClass('hide-newsletter');
-      	}
-      	isActive = !isActive;
+      	// } else {
+      		// $('.newsletter-wrapper').removeClass('hide-newsletter');
+      	// }
       });
 
+      $('.nav-cart').on('mouseover',function(){
+        $('.sticky-cart').fadeIn();
+      })
+      $('.sticky-cart').mouseleave(function(){
+        $('.sticky-cart').fadeOut();
+      })
 
-    }
+    }//end of controller
   };
 });
