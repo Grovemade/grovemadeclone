@@ -76,6 +76,9 @@ footer {
     background-color: white;
     color: #4a4d51;
   }
+  button:focus{
+    outline: none;
+  } 
   p{
     margin: 32px 0;
     font-weight: 300;

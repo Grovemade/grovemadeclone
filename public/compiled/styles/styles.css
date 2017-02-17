@@ -64,6 +64,8 @@ footer {
   .newsletter-signup button:hover {
     background-color: white;
     color: #4a4d51; }
+  .newsletter-signup button:focus {
+    outline: none; }
   .newsletter-signup p {
     margin: 32px 0;
     font-weight: 300; }
@@ -152,8 +154,11 @@ footer {
   padding: 8px 10px 8px 10px; }
 
 .home-title button:hover {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
   opacity: .5; }
+
+.home-title button:focus {
+  outline: none; }
 
 .home-color {
   font-size: 20px;
@@ -181,6 +186,14 @@ footer {
 
 .homeSection div {
   color: white; }
+
+.ion-chevron-right {
+  padding-right: 40px;
+  font-size: 30px; }
+
+.ion-chevron-left {
+  padding-left: 40px;
+  font-size: 30px; }
 
 @import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
 @font-face {
