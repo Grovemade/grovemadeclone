@@ -40,8 +40,11 @@ $hover: rgba(255,255,255,0.3);
   padding: 8px 10px 8px 10px;
 }
 .home-title button:hover {
-  background-color: transparent;
+  background-color: rgba(0,0,0,0.3);
   opacity: .5;
+}
+.home-title button:focus{
+  outline: none;
 }
 .home-color {
   // background-color: pink;
@@ -74,4 +77,13 @@ $hover: rgba(255,255,255,0.3);
 .homeSection div {
   color: white;
   // background-attachment: fixed;
+}
+.ion-chevron-right {
+  padding-right: 40px;
+  font-size: 30px;
+}
+
+.ion-chevron-left {
+  padding-left: 40px;
+  font-size: 30px;
 }
