@@ -1,9 +1,32 @@
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {
+  font-family: "DINNextRoundedLTW01-Regular";
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+  src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg"); }
+
 .about-header {
   background: url("/img/about-2016-C3_2.jpg");
   height: 400px;
   width: 100%;
   background-position: center center;
   background-size: cover; }
+
+#stylize-headers {
+  font-family: "DINNextRoundedLTW01-Regular";
+  font-size: 48px;
+  font-weight: lighter;
+  color: #494c51;
+  text-align: center; }
+
+#stylize-p {
+  font-family: "DINNextRoundedLTW01-Regular";
+  text-align: center;
+  color: #939393;
+  line-height: 200%;
+  font-size: 16px; }
+
+.italicized-sentence {
+  font-style: italic; }
 
 .carousel-inner > .item > img {
   height: 100vh !important;
