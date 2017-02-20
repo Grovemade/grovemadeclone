@@ -3,4 +3,6 @@ angular.module('grovemade').directive('customfooter', () => {
     templateUrl: './templates/footer.html',
   })
 
+
+
 })
