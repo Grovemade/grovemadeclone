@@ -1,2 +1,3 @@
 select *
-from journal_page;
+from journal_page
+order by id;
