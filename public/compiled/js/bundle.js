@@ -122,10 +122,35 @@ angular.module('grovemade').controller('journalCtrl', function ($scope, homeSrvc
     $scope.journal = response.data;
     console.log('CTRL', $scope.journal);
   });
+  // upon hover, the selected index is pushing the animate.css  fade to the covering array
+  $scope.covering = [];
+  $scope.onHover = function (i) {
+    $scope.selected = i;
+    $scope.covering.push('cover animated fadeIn2');
+  };
+  // upon mouse leave, the selected index we are on will take away the animate.css
+  $scope.onLeave = function (i) {
+    $scope.selected = i;
+    $scope.covering.splice(0);
+  };
 });
 'use strict';
 
 angular.module('grovemade').controller('shopCtrl', function ($scope) {});
+'use strict';
+
+angular.module('grovemade').service('homeSrvc', function ($http) {
+
+  this.getJournal = function () {
+    return $http({
+      method: 'GET',
+      url: '/journal'
+    }).then(function (response) {
+      console.log('SRVC', response);
+      return response;
+    });
+  };
+});
 'use strict';
 
 angular.module('grovemade').directive('customfooter', function () {
@@ -207,3 +232,4 @@ angular.module('grovemade').service('homeSrvc', function ($http) {
     });
   };
 });
+
