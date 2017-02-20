@@ -1,97 +1,55 @@
-CREATE TABLE Products (
+CREATE TABLE products (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(30),
-  display_title TEXT,
+  name VARCHAR(255),
   description TEXT,
-  price INT,
-  type TEXT
-);
-
-CREATE TABLE Finish (
-  id SERIAL PRIMARY KEY,
-  productId references Products,
-  finish TEXT
-);
-
-CREATE TABLE Watches (
-  id SERIAL PRIMARY KEY,
-  productId references Products,
-  shape TEXT,
-  model VACHAR(5)
-);
-
-CREATE TABLE Sizes (
-  id SERIAL PRIMARY KEY,
-  productId references Products;
-  size TEXT;
-  -- short TEXT,
-  -- tall TEXT,
-  -- 11inch-air TEXT,
-  -- 13inch_air TEXT,
-  -- 12inch_mb TEXT,
-  -- 13inch_mbpro TEXT,
-  -- 15inch_mbpro TEXT,
-  -- iphoneSE TEXT,
-  -- iphone5 TEXT,
-  -- iphone5s TEXT,
-  -- iphone5c TEXT,
-  -- iphone6 TEXT,
-  -- iphone6s TEXT,
-  -- iphone6plus TEXT,
-  -- iphone6splus TEXT,
-  -- iphone7 TEXT,
-  -- iphone7plus TEXT,
-  -- oct2015 TEXT,
-  -- pre-oct15 TEXT,
-  -- numeric_keypad TEXT
-);
-
--- CREATE TABLE Phones (
---   id SERIAL PRIMARY KEY,
---   productId references products;
---   SE BOOLEAN,
---   6_6S BOOLEAN,
---   6_6S_plus BOOLEAN,
---   7_ BOOLEAN,
---   7plus BOOLEAN
--- );
---
--- CREATE TABLE Docks (
---   id SERIAL PRIMARY KEY,
---   productId references products;
---   SE_5_5s_5c BOOLEAN,
---   6_6S_7 BOOLEAN,
---   6_6S_7plus BOOLEAN,
--- );
---
--- CREATE TABLE DeviceDate (
---   id SERIAL PRIMARY KEY,
---   productId references products;
---   pre_Oct15 BOOLEAN,
---   oct15 BOOLEAN,
---   numeric_keypad BOOLEAN,
--- );
-
-CREATE TABLE Subscriptions (
-  id SERIAL PRIMARY KEY,
-  email TEXT
-);
-
-CREATE TABLE People (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(30),
-  bio TEXT,
-  attr1 TEXT,
-  attr2 TEXT,
+  type VARCHAR(255),
+  finish VARCHAR(255),
   image1 TEXT,
-  image2 TEXT
+  image2 TEXT,
+  price VARCHAR(255)
 );
 
-CREATE TABLE Journal (
+CREATE TABLE images (
   id SERIAL PRIMARY KEY,
-  image TEXT,
-  title TEXT
+  size_id integer,
+  url TEXT
 );
+
+CREATE TABLE journal_page (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255),
+  photo_url TEXT
+);
+
+CREATE TABLE carousel (
+  id SERIAL PRIMARY KEY,
+  product_id INTEGER,
+  url TEXT
+);
+
+CREATE TABLE sizes (
+  id SERIAL PRIMARY KEY,
+  product_id INTEGER,
+  size VARCHAR(255),
+  price VARCHAR(255)
+);
+
+CREATE TABLE about_page (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255),
+  bio TEXT,
+  link TEXT,
+  thumbnail TEXT,
+  hover_thumb TEXT,
+  bio_pic TEXT
+);
+
+CREATE TABLE about_attributes (
+  id SERIAL PRIMARY KEY,
+  employee_id INTEGER,
+  attribute TEXT
+);
+
 
 CREATE TABLE orders (
   id SERIAL PRIMARY KEY,
