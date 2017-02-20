@@ -16,14 +16,17 @@ app.use(session({
   saveUninitialized: false
 }));
 
-// const conn = massive.connectSync({
-//   connectionString : "postgres://postgres:@localhost/kombuchadog-clone"
-// });
-// app.set('db', conn);
+const conn = massive.connectSync({
+  connectionString : "postgres://wrsnckvi:wp4YM7EAfXNvtYHBYVk5LaQBGZsrrMfC@babar.elephantsql.com:5432/wrsnckvi"
+});
+app.set('db', conn);
 const db = app.get('db');
+
 const productsController = require('./productsController');
 
 // app.get('/shop', productsController.getShop);
+app.get('/about', productsController.getAboutPage);
+app.get('/journal', productsController.getJournal);
 
 
 app.listen(3050, () => {
