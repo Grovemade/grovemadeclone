@@ -9,7 +9,7 @@ getAboutPage: (req, res) => {
       console.log(err);
       res.status(200).json(err);
     } else {
-      console.log('getting jounral', response);
+      // console.log('getting jounral', response);
       res.status(200).json(response);
     }
   });
