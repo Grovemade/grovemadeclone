@@ -5,4 +5,5 @@ angular.module('grovemade')
     $scope.employees = response.data;
     console.log('CTRL', $scope.employees);
   })
+
 });
