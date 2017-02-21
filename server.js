@@ -24,9 +24,10 @@ const db = app.get('db');
 
 const productsController = require('./productsController');
 
-// app.get('/shop', productsController.getShop);
+app.get('/shop', productsController.getShop);
 app.get('/about', productsController.getAboutPage);
 app.get('/journal', productsController.getJournal);
+
 
 
 app.listen(3050, () => {

@@ -1,3 +1,35 @@
 <div class="shop-header">
   <h1>SHOP</h1>
 </div>
+
+<!-- changed .shop-gallery, line 47, 48
+commented out product-grip-container:nth-child(n)
+add .product-grid-container, product-link, product-image-container flex items -->
+
+<section class='shop-wrapper'>
+  <div class='shop-gallery'>
+    <div ng-repeat='product in products' class='product-grid-container'>
+      <!-- <div class=product-grid> -->
+        <a class='product-link'>
+          <div class='product-image-container'>
+            <img class='product-image' alt="" ng-src='{{product.image1}}'/>
+            
+          </div>
+          <div class='product-info'>
+            <h4>{{product.name}}</h4>
+            <p>{{product.price}}<span class='dash'> | </span> <span>ADD TO CART</span></p>
+          </div>
+      </a>
+      <div class='products-grid-line'></div>
+      <!-- </div> -->
+    </div>
+  </div>
+</section>
+
+
+<!-- style="background: url('{{entry.photo_url}}');
+           background-size: cover;
+           height: 26vw;
+           width: 26vw;
+           background-position: center;
+           cursor:pointer;"> -->
