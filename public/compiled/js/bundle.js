@@ -34,6 +34,101 @@ angular.module('grovemade', ['ui.router']).config(function ($stateProvider, $url
     controller: 'journalCtrl'
   });
 });
+
+'use strict';
+
+angular.module('grovemade').directive('customfooter', function () {
+  return {
+    templateUrl: './templates/footer.html',
+    controller: function($scope){
+      $scope.scrollTop = function(){
+      window.scrollTo(0, 0)
+    }
+    }
+  })
+})
+"use strict";
+
+'use strict';
+
+angular.module('grovemade').directive('navbar', function () {
+  return {
+    templateUrl: './templates/navbar.html',
+    controller: function controller($state, $rootScope) {
+      $(document).ready(function () {
+        $('.nav').removeClass('sticky-nav');
+        var scroll_pos = 0;
+        $(document).scroll(function () {
+          scroll_pos = $(this).scrollTop();
+          if (scroll_pos > 20) {
+            $('.nav').addClass('sticky-nav');
+          } else {
+            $('.nav').removeClass('sticky-nav');
+          }
+        });
+      });
+
+      // var isActive = false;
+
+      $('.newsletter-open').on('click', function () {
+        // isActive = !isActive;
+        // if (isActive) {
+        // console.log(isActive);
+        $('.newsletter-wrapper').removeClass('hide-newsletter');
+        // } else {
+        // $('.newsletter-wrapper').addClass('hide-newsletter');
+        // }
+      });
+
+      $('.newsletter-close').on('click', function () {
+        // isActive = !isActive;
+        // if (!isActive) {
+        $('.newsletter-wrapper').addClass('hide-newsletter');
+        // } else {
+        // $('.newsletter-wrapper').removeClass('hide-newsletter');
+        // }
+      });
+
+      $('.nav-cart').on('mouseover', function () {
+        $('.sticky-cart').fadeIn();
+      });
+      $('.sticky-cart').mouseleave(function () {
+        $('.sticky-cart').fadeOut();
+      });
+    } //end of controller
+  };
+});
+'use strict';
+
+angular.module('grovemade').service('homeSrvc', function ($http) {
+
+  this.getAboutPage = function () {
+    return $http({
+      method: 'GET',
+      url: '/about'
+    }).then(function (response) {
+      console.log('SRVC', response);
+      return response;
+    });
+  };
+
+  this.getJournal = function () {
+    return $http({
+      method: 'GET',
+      url: '/journal'
+    }).then(function (response) {
+      console.log('SRVC', response);
+      return response;
+    });
+  };
+
+  this.getAttributes = function (id) {
+    return $http({
+      method: 'GET',
+      url: '/attributes/' + id
+    });
+  };
+});
 'use strict';
 
 angular.module('grovemade').controller('aboutCtrl', function ($scope, homeSrvc, $stateParams) {
@@ -42,6 +137,14 @@ angular.module('grovemade').controller('aboutCtrl', function ($scope, homeSrvc, 
     $scope.employees = response.data;
     console.log('CTRL', $scope.employees);
   });
+
+  $scope.showEmployee = function (id) {
+    console.log(id);
+    homeSrvc.getAttributes(id).then(function (res) {
+      $scope.attributes = res.data;
+      console.log(res.data);
+    });
+  };
 });
 'use strict';
 
@@ -252,3 +355,4 @@ angular.module('grovemade').service('homeSrvc', function ($http) {
     });
   };
 });
+>>>>>>> master
