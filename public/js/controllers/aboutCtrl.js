@@ -7,6 +7,7 @@ angular.module('grovemade')
 
   })
 
+
   $scope.showEmployee=function(id){
     console.log(id);
     homeSrvc.getAttributes(id).then(function(res){
@@ -16,6 +17,7 @@ angular.module('grovemade')
 
 
   }
+
 
 
 

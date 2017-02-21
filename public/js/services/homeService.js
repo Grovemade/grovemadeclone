@@ -1,5 +1,15 @@
 angular.module('grovemade').service('homeSrvc', function($http) {
 
+  this.getShop = () => {
+    return $http({
+      method: 'GET',
+      url: '/shop'
+    }).then((response) => {
+      console.log('SRVC', response);
+      return response;
+    });
+  };
+
   this.getAboutPage = () => {
     return $http({
       method: 'GET',

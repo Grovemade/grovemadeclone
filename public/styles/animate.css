@@ -1234,10 +1234,34 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: .3;
+  }
+}
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: .3;
+  }
+}
 
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+
+}
+.fadeIn2 {
+  -webkit-animation-name: fadeIn2;
+  animation-name: fadeIn2;
 
 }
 

@@ -24,7 +24,7 @@ const db = app.get('db');
 
 const productsController = require('./productsController');
 
-// app.get('/shop', productsController.getShop);
+app.get('/shop', productsController.getShop);
 app.get('/about', productsController.getAboutPage);
 app.get('/journal', productsController.getJournal);
 app.get('/attributes/:id', function(req, res){
@@ -37,6 +37,7 @@ app.get('/attributes/:id', function(req, res){
     }
   })
 } )
+
 
 app.listen(3050, () => {
   console.log('Connected on port', port)
