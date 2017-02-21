@@ -30,4 +30,12 @@ angular.module('grovemade').service('homeSrvc', function($http) {
     });
   };
 
+  this.getAttributes = (id) => {
+    return $http({
+      method: 'GET',
+      url: '/attributes/' + id
+    });
+  };
+
+
 });
