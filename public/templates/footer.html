@@ -2,8 +2,8 @@
   <div class='footer-wrapper'>
     <div class='footer-content'>
       <div class='arrow-to-top'>
-        <a href="#top" target="_self"><img class="footer-scroll-up__img" src="/img/scroll-up-circled.png"></a>
-        <p>TO THE TOP</p>
+        <img ng-click="scrollTop()"class="footer-scroll-up__img" src="/img/scroll-up-circled.png">
+        <p >TO THE TOP</p>
       </div>
       <div class='newsletter-signup'>
         <form>
@@ -15,10 +15,11 @@
       <div class='social-media-footer'>
         <p>FOLLOW US</p>
         <div class='social-links'>
-        <a class='social-icon' href='https://www.facebook.com/grovemade'><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a class='social-icon' href='https://twitter.com/grovemade'><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a class='social-icon' href='https://www.instagram.com/grovemade/'><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a class='social-icon' href='https://www.pinterest.com/grovemade/'><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+          <!-- onclick="window.open" will open up a new tab to the site -->
+        <a onclick="window.open('https://www.facebook.com/grovemade')"class='social-icon'><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a onclick="window.open('https://twitter.com/grovemade')"class='social-icon'><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a onclick="window.open('https://www.instagram.com/grovemade/')"class='social-icon'><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a onclick="window.open('https://www.pinterest.com/grovemade/')"class='social-icon'><i class="fa fa-pinterest" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -40,3 +41,6 @@
     </div>
   </div>
 </footer>
+
+
+<a href="#top" target="_self"></a>

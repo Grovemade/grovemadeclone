@@ -233,4 +233,3 @@ angular.module('grovemade').controller('shopCtrl', function ($scope, homeSrvc, $
     console.log('CTRL', $scope.products);
   });
 });
-

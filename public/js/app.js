@@ -28,5 +28,24 @@ angular.module('grovemade', ['ui.router'])
     controller:'journalCtrl'
   })
 
+  .state('1', {
+    url:'/journal/desk-ergonomics',
+    templateUrl:'./templates/desk-ergonomics.html',
+    controller:'journalCtrl'
+  })
+
+  .state('2', {
+    url:'/journal/love-your-work',
+    templateUrl:'./templates/love-your-work.html',
+    controller:'journalCtrl'
+  })
+
+  .state('3', {
+    url:'/journal/designing-the-wood-watch-02',
+    templateUrl:'./templates/designing-the-wood-watch-02.html',
+    controller:'journalCtrl'
+  })
+
+
 
 })
