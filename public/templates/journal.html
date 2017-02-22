@@ -6,7 +6,7 @@
 </div>
 <div class="all-journal-entries" >
 
-    <div ng-mouseenter="onHover($index)" ng-mouseleave="onLeave($index)" ng-repeat="entry in journal track by $index"class="individual-entry" style="background: url('{{entry.photo_url}}');
+  <div ng-mouseenter="onHover($index)" ng-mouseleave="onLeave($index)" ng-repeat="entry in journal track by $index" ng-switch="selection" class="individual-entry" style="background: url('{{entry.photo_url}}');
            background-size: cover;
            height: 26vw;
            width: 26vw;
@@ -14,7 +14,8 @@
            cursor:pointer;">
            <!-- this div is for the hover effect -->
            <!-- ng-if checks to see if the selected index we are on is the div we want , if it is, it fires off a function in the journalCtrl-->
-           <div ng-class="covering" ng-if="$index === selected"></div>
-     <div class="journal-title">{{entry.title}}</div>
-</div>
+    <div ng-class="covering" ng-if="$index === selected" ui-sref='{{entry.id}}'></div>
+    <div class="journal-title">{{entry.title}}</div>
+ 
+  </div>
 </div>

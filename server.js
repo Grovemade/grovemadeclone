@@ -27,7 +27,16 @@ const productsController = require('./productsController');
 app.get('/shop', productsController.getShop);
 app.get('/about', productsController.getAboutPage);
 app.get('/journal', productsController.getJournal);
-
+app.get('/attributes/:id', function(req, res){
+  db.getAttributes([req.params.id], function(err, attrs){
+    if(err) {
+      res.status(500).json(err);
+    }
+    else {
+      res.status(200).json(attrs);
+    }
+  })
+} )
 
 
 app.listen(3050, () => {
