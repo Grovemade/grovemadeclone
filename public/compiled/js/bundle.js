@@ -161,6 +161,15 @@ angular.module('grovemade').controller('shopCtrl', function ($scope, homeSrvc, $
     $scope.products = response.data;
     console.log('CTRL', $scope.products);
   });
+
+  $(document).on("mouseover", "#unique", function() {
+    $(this).addClass('animated fadeOut')
+  });
+  $(document).on("mouseleave", "#unique", function() {
+    $(this).removeClass('animated fadeOut')
+    $(this).addClass('animated fadeIn')
+  });
+
 });
 'use strict';
 
