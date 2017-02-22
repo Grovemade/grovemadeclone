@@ -1,0 +1,105 @@
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {font-family: "DINNextRoundedLTW01-Regular";
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg");
+}
+@import url(//db.onlinewebfonts.com/c/9ae5e19516bc6428f1327ff3311b2617?family=DINNextW01-Light);
+@font-face {font-family: "DINNextW01-Light";
+    src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot");
+    src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.svg#DINNextW01-Light") format("svg");
+}
+
+$font: "DINNextRoundedLTW01-Regular";
+$font2: "DINNextW01-Light";
+
+.ergonomics-header{
+  background: url('/img/collections-cover-walnutdesk-D2_2.jpg');
+  height: 400px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.ergonomics-all-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 37px;
+  h3{
+    font-family: $font;
+    font-size: 28px;
+    letter-spacing: .4em;
+    line-height: 34px;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  p{
+    width: 50%;
+    margin-top: 35px;
+    margin-bottom: 38px;
+    font-family: $font2;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 200%;
+    color:#939393;
+  }
+  img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 64%;
+    width: 51%;
+  }
+  .two-pics-container{
+    display: flex;
+    justify-content: space-around;
+    width: 56.5%;
+    height: 40%;
+    // background-color: blue;
+    img{
+      height: 18vw;
+      width: 27vw;
+    }
+  }
+  .backpain-pic{
+    height: auto;
+    width: 37%;
+  }
+  .ergonomics-monitor-stands-pic{
+    height: auto;
+    width: 37%;
+  }
+  button{
+    font-size: 12px;
+    letter-spacing: .2em;
+    font-family: $font;
+    line-height: 34px;
+    cursor: pointer;
+    border: 3px solid #424242;
+    background: white;
+    color: #424242;
+    font-weight: bold;
+    height: 41px;
+  }
+  button:hover{
+    background: #424242;
+    color: white;
+  }
+  .ergonomics-laptop-stands-pic{
+    height: auto;
+    width: 37%;
+  }
+  .ergonomics-last-button{
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+}
