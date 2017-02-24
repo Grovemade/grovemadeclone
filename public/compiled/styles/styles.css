@@ -11,13 +11,17 @@
   background-position: center center;
   background-size: cover; }
 
+.about-all {
+  display: flex;
+  justify-content: center; }
+
 #stylize-headers {
   font-family: "DINNextRoundedLTW01-Regular";
   font-size: 48px;
   font-weight: lighter;
   color: #494c51;
   text-align: center;
-  margin: 0 190px; }
+  margin: 0 170px; }
 
 #stylize-p {
   font-family: "DINNextRoundedLTW01-Regular";
@@ -30,13 +34,11 @@
   margin: auto; }
 
 .what-matters {
-  margin-top: 70px;
-  margin-bottom: 130px; }
+  margin-top: 80px;
+  margin-bottom: 54px; }
 
 .we-believe {
   margin-top: 100px;
-  margin-right: 100px;
-  margin-left: 100px;
   margin-bottom: 100px;
   text-align: center; }
 
@@ -45,50 +47,8 @@
   margin-bottom: -20px;
   text-align: center; }
 
-.image-block-2-space {
-  margin-top: 100px;
-  margin-bottom: -20px; }
-
-.image-block-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  height: 390px;
-  width: auto;
-  justify-content: center;
-  margin-bottom: 100px; }
-
-.image-block-img1 {
-  width: auto;
-  height: 388px;
-  padding-right: 14px; }
-
-.image-block-img2 {
-  width: auto;
-  height: 388px;
-  padding-left: 14px; }
-
-.image-block-1-img {
-  display: flex;
-  width: 100%;
-  justify-content: center; }
-
-.all-employees {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 0px 30px; }
-
-.single-employees {
-  padding: 0 2px; }
-
-.single-employees-img {
-  padding: 8px 16px;
-  cursor: pointer; }
-
 .our-story {
-  margin-top: 160px;
+  margin-top: 200px;
   margin-bottom: 125px; }
 
 .our-story-p {
@@ -118,6 +78,112 @@
 
 .italicized-sentence {
   font-style: italic; }
+
+.image-block-2-space {
+  margin-top: 100px;
+  margin-bottom: -20px; }
+
+.image-block-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 120px; }
+
+.image-block-img1 {
+  width: 31vw;
+  height: 21vw;
+  display: flex;
+  padding-left: 20px; }
+
+.image-block-single {
+  width: 100%; }
+
+.all-employees {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center; }
+
+.all-employees img {
+  height: 20vw;
+  width: 13.5vw; }
+
+.single-employees-img {
+  padding: 8px 16px;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute; }
+
+.top-image {
+  position: absolute;
+  z-index: 2; }
+
+.employee-bio-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  margin-top: 2px;
+  margin-bottom: 1px; }
+
+.full-bio-image img {
+  width: 320px;
+  height: 430px; }
+
+.employee-bio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 50%; }
+
+.employee-full-bio {
+  width: 80%;
+  height: 35vw;
+  position: absolute;
+  left: 125px;
+  z-index: 3; }
+
+.employee-full-bio img {
+  height: 35vw;
+  width: 28vw; }
+
+.employee-name {
+  font-family: "DINNextRoundedLTW01-Regular";
+  color: #424242;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 6px; }
+
+.employee-description {
+  font-family: "DINNextRoundedLTW01-Regular";
+  color: #424242;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 2px; }
+
+.employee-attributes {
+  font-family: "DINNextRoundedLTW01-Regular";
+  font-size: 13px;
+  color: #424242;
+  line-height: 18px; }
+
+.image-wrapper {
+  height: 21vw;
+  width: 14.5vw;
+  position: relative; }
+
+.moveDown {
+  margin-top: 35vw; }
+
+.closeUp {
+  margin-top: 35vw; }
 
 .carousel-inner > .item > img {
   height: 100vh !important;

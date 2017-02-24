@@ -37,5 +37,9 @@ angular.module('grovemade').service('homeSrvc', function($http) {
     });
   };
 
+  // this.getBio = (employee) => {
+  //   return
+  // }
+
 
 });
