@@ -32,7 +32,8 @@ add .product-grid-container, product-link, product-image-container flex items --
 
 <section class='shop-wrapper'>
   <div class='shop-gallery'>
-    <div ng-repeat='product in products | filter : {type:filter1 } | filter: filter2 track by $index' class='product-grid-container' id='product-container'>
+    <div ng-repeat='product in products | filter : {type:filter1 } | filter: filter2 track by $index' class='product-grid-container' id='product-container' ui-sref='product({id:product.id})'>
+
       <!-- <div class=product-grid> -->
         <a class='product-link'>
           <div class='product-image-container'>

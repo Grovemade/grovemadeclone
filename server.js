@@ -37,6 +37,10 @@ app.get('/attributes/:id', function(req, res){
     }
   })
 } )
+app.get('/product/:id', productsController.getProduct);
+app.get('/carousel/:id', productsController.getCarousel);
+app.get('/sizes/:id', productsController.getSizes);
+app.get('/images/:id', productsController.getImages);
 
 
 app.listen(3050, () => {
