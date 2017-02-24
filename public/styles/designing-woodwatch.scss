@@ -1,0 +1,272 @@
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {font-family: "DINNextRoundedLTW01-Regular";
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg");
+}
+@import url(//db.onlinewebfonts.com/c/9ae5e19516bc6428f1327ff3311b2617?family=DINNextW01-Light);
+@font-face {font-family: "DINNextW01-Light";
+    src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot");
+    src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.svg#DINNextW01-Light") format("svg");
+}
+
+$font: "DINNextRoundedLTW01-Regular";
+$font2: "DINNextW01-Light";
+
+.woodwatchHeader {
+  background: url('/img/journal-designing-wood-watch-cover-A1.jpg');
+  height: 400px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.woodwatch-allcontent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    font-family: $font;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    letter-spacing: .4em
+      }
+    .woodwatch-title {
+      align-items: center;
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+    .woodwatch-intro {
+      font-family: $font;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      line-height: 200%;
+      font-style: italic;
+      width: 50%;
+      margin-bottom: 60px;
+    }
+    .tri-watch-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      height: 50%;
+      margin-bottom: 50px;
+      img {
+        width: 95%;
+      }
+    }
+    .shop-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 4px;
+      border: solid #424242;
+      font-family: $font;
+      margin-bottom: 50px;
+      width: 17%;
+      height: auto;
+      padding: 8px 0px;
+      h5 {
+      color: #424242;
+      font-size: 14px;
+      font-weight: bold;
+    }
+        }
+    .shop-button:hover {
+      background-color: #424242;
+      h5 {
+        color: white;
+        }
+    }
+    p {
+      font-family: $font;
+      font-size: 16px;
+      line-height: 32px;
+      color: #939393;
+      width: 50%;
+    }
+    .moving-watch {
+      display: flex;
+      justify-content: center;
+      align-items: center;;
+      text-align: center;
+      flex-direction: column;
+      width: 50%;
+      height: auto;
+      img {
+        width: 75%;
+        margin-top: 50px;
+      }
+    }
+    .movingwatch-p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+    .stefan-profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 40px;
+      img {
+        width: 8%;
+      }
+    }
+    .design-playbook {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      margin-bottom: 45px;
+    }
+    .double-image {
+      display: flex;
+      justify-content: center;
+      width: 75%;
+      margin-bottom: 75px;
+      img{
+        display: flex;
+        flex-wrap: wrap;
+        width: 45%;
+        height: 45%;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    }
+    .ken-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    img {
+      width: 8%;
+    }
+  }
+    .wooden-dish-p {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    .wood-dish-image {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+      margin-bottom: 50px;
+      img {
+        width: 73%;
+        height: 73%;
+      }
+    }
+    .wood-dish-p2 {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    .between-profiles {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      margin-bottom: 50px;
+    }
+    .super-team {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      margin-bottom: 50px;
+    }
+    .watch-plans {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+      margin-bottom: 50px;
+      img{
+        width:73%;
+        height:73%;
+      }
+    }
+    .illustrated-p {
+      display: flex;
+      justify-content: center;
+      flex-direction: wrap;
+      text-align: left;
+      margin-bottom: 25px;
+      p {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+    .watch-faces {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+      margin-top: 25px;
+      margin-bottom: 50px;
+      img {
+        width: 73%;
+        height: 73%;
+      }
+    }
+    .sean-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    img {
+      width: 8%;
+    }
+  }
+    .preliminary-design {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  .watch-blueprint {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    img {
+      width: 73%;
+      height: 73%;
+    }
+  }
+  .watch-diagram {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    img {
+      width: 73%;
+      height: 73%;
+    }
+  }
+
+
+
+  }//END OF CLOSING BRACKET!!!!!!!!!!
