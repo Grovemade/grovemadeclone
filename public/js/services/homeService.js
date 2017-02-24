@@ -37,6 +37,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
     });
   };
 
+
   this.getProduct = (id) => {
     return $http({
       method: 'GET',
@@ -77,6 +78,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       return response;
     });
   };
+
 
 
 
