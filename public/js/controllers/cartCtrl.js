@@ -1,5 +1,5 @@
 angular.module('grovemade')
-.controller('cartCtrl', function($scope, mainSrvc, $stateParams, $rootScope){
+.controller('cartCtrl', ($scope, homeSrvc, $stateParams, $rootScope) => {
 
   // $scope.subtotal = 0;
   // $scope.cart;
@@ -26,13 +26,15 @@ angular.module('grovemade')
   //   return $scope.totalItems;
   // }
 
-  mainSrvc.getCart().then((response) => {
+  homeSrvc.getCart().then((response) => {
     $scope.cart = response.data;
-    console.log('Cart in controller', $scope.cart);
-    cartTotal();
-  }).catch((err) => {
-    console.log(err);
+    console.log('Cart CTRL', $scope.cart);
+    // cartTotal();
   });
+
+  // .catch((err) => {
+  //   console.log(err);
+  // });
 
 // $scope.removeFromCart = (item) => {
 //   $rootScope.cartTotal = findTotalItems();
@@ -61,3 +63,4 @@ angular.module('grovemade')
 //       console.log(err);
 //     });
 // };
+});

@@ -41,8 +41,8 @@ app.get('/product/:id', productsController.getProduct);
 app.get('/carousel/:id', productsController.getCarousel);
 app.get('/sizes/:id', productsController.getSizes);
 app.get('/images/:id', productsController.getImages);
-app.post('/cart', mainController.addToCart);
-app.get('/cart', mainController.getCart);
+app.post('/cart', productsController.addToCart);
+app.get('/cart', productsController.getCart);
 
 
 app.listen(3050, () => {
