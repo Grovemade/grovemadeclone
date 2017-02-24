@@ -11,11 +11,16 @@
 $font: "DINNextRoundedLTW01-Regular";
 
 .about-header{
-  background: url("/img/about-2016-C3_2.jpg");
-  height: 400px;
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
+background: url("/img/about-2016-C3_2.jpg");
+height: 400px;
+width: 100%;
+background-position: center center;
+background-size: cover;
+}
+
+.about-all {
+  display: flex;
+  justify-content: center;
 }
 
 #stylize-headers {
@@ -24,9 +29,8 @@ font-size: 48px;
 font-weight: lighter;
 color: #494c51;
 text-align: center;
-margin: 0 190px;
+margin: 0 170px;
 }
-
 #stylize-p {
 font-family: $font;
 text-align: center;
@@ -37,99 +41,167 @@ width: 50%;
 float: none;
 margin: auto;
 }
+
 .what-matters {
-  margin-top: 70px;
-  margin-bottom: 130px;
+margin-top: 80px;
+margin-bottom: 54px;
 }
 .we-believe {
-  margin-top: 100px;
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-bottom: 100px;
-  text-align: center;
+margin-top: 100px;
+margin-bottom: 100px;
+text-align: center;
 }
 .inner-box {
-  margin-top: 60px;
-  margin-bottom: -20px;
-  // width: 50%;
-  text-align: center;
+margin-top: 60px;
+margin-bottom: -20px;
+text-align: center;
 }
+.our-story {
+margin-top: 200px;
+margin-bottom: 125px;
+}
+.our-story-p {
+padding-top: 65px;
+}
+.hands-on-deck-p {
+margin-top: 137px;
+margin-bottom: 115px;
+}
+.hands-on-deck-p2 {
+margin-top: 68px;
+margin-bottom: 114px;
+}
+.visit-our-shop {
+margin-top: 118px;
+margin-bottom: 95px
+}
+.visit-our-shop-p2 {
+margin-bottom: 50px;
+margin-top: 70px;
+}
+.what-matters-p {
+margin-bottom: 125px;
+}
+.what-matters-h {
+margin-bottom: 145px;
+}
+.italicized-sentence {
+  font-style: italic;
+}
+
+//IMAGE CLASSES
 
 .image-block-2-space {
-margin-top: 100px;
-margin-bottom: -20px;
+  margin-top: 100px;
+  margin-bottom: -20px;
 }
-
 .image-block-wrapper {
   display: flex;
   flex-wrap: wrap;
-  height: 390px;
-  width: auto;
+  max-width: 100%;
   justify-content: center;
   margin-bottom: 100px;
-
+  margin-top: 120px;
 }
 .image-block-img1 {
-  width: auto;
-  height: 388px;
-  padding-right: 14px;
+  width: 31vw;
+  height: 21vw;
+  display: flex;
+  padding-left: 20px;
 }
-.image-block-img2 {
-width: auto;
-height: 388px;
-padding-left: 14px;
+.image-block-single {
+  width: 100%;
 }
-.image-block-1-img {
-display: flex;
-width: 100%;
-justify-content: center;
-}
+
 .all-employees {
-margin-top: 20px;
-display: flex;
-justify-content: center;;
-align-items: center;
-flex-wrap: wrap;
-padding: 0px 30px;
-  }
-.single-employees {
-padding: 0 2px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+.all-employees img {
+  height: 20vw;
+  width: 13.5vw;
+}
+
 .single-employees-img {
-padding: 8px 16px;
-cursor: pointer;
-  }
-  .our-story {
-    margin-top: 160px;
-    margin-bottom: 125px;
-  }
-  .our-story-p {
-    padding-top: 65px;
-  }
-  .hands-on-deck-p {
-    margin-top: 137px;
-    margin-bottom: 115px;
-  }
-  .hands-on-deck-p2 {
-    margin-top: 68px;
-    margin-bottom: 114px;
-  }
-  .visit-our-shop {
-  margin-top: 118px;
-  margin-bottom: 95px
-  }
-  .visit-our-shop-p2 {
-    margin-bottom: 50px;
-    margin-top: 70px;
-  }
-  .what-matters-p {
-    margin-bottom: 125px;
-  }
-  .what-matters-h {
-    margin-bottom: 145px;
-  }
+  padding: 8px 16px;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
 
+}
+.top-image {
+  position: absolute;
+  z-index: 2;
+}
 
-.italicized-sentence {
-  font-style: italic;
+.employee-bio-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  margin-top: 2px;
+  margin-bottom: 1px;
+}
+.full-bio-image img {
+  width: 320px;
+  height: 430px;
+}
+.employee-bio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
+.employee-full-bio {
+  width: 80%;
+  height: 35vw;
+  position: absolute;
+  left: 125px;
+  z-index: 3;
+}
+.employee-full-bio img {
+  height: 35vw;
+  width: 28vw;
+}
+
+.employee-name {
+  font-family: $font;
+  color: #424242;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 6px;
+}
+.employee-description {
+  font-family: $font;
+  color: #424242;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 2px
+}
+.employee-attributes {
+  font-family: $font;
+  font-size: 13px;
+  color: #424242;
+  line-height: 18px;
+}
+.image-wrapper {
+  height: 21vw;
+  width: 14.5vw;
+  position: relative;
+
+}
+.moveDown {
+  margin-top: 35vw;
+}
+.closeUp {
+  margin-top: 35vw;
 }
