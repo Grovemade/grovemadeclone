@@ -1,6 +1,6 @@
 angular.module('grovemade')
-.controller('productCtrl', ($scope, homeSrvc, $stateParams) => {
-  
+.controller('productCtrl', ($scope, homeSrvc, $stateParams, $rootScope) => {
+
 homeSrvc.getProduct($stateParams.id).then((response) => {
   $scope.item = response.data;
   console.log('DETAILs', $scope.item);
@@ -26,5 +26,18 @@ $scope.getImages = (size) => {
     console.log(err);
   })
 };
+
+$scope.quantity = 1;
+  $scope.addToCart = (size, quantity) => {
+    // $rootScope.cartTotal += Number(quantity);
+    let productId = $scope.item[0].id;
+    let productName = $scope.item[0].name;
+    if($scope.item.image1 == null){
+      var productImage = $scope.item[0].image2;
+    } else {
+      var productImage = $scope.item[0].image1;
+    }
+    homeSrvc.addToCart(productId, productName, productImage, size, quantity);
+  };
 
 }); //end of controller
