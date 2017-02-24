@@ -7,7 +7,7 @@ angular.module('grovemade')
     console.log('CTRL', $scope.journal);
   })
   // upon hover, the selected index is pushing the animate.css  fade to the covering array
-$scope.covering = []
+$scope.covering = [];
 $scope.onHover = function(i){
   $scope.selected = i
   $scope.covering.push('cover animated fadeIn2')

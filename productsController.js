@@ -39,6 +39,53 @@ getJournal: (req, res) => {
   });
 },
 
+getProduct: (req, res) => {
+  db.getProduct(req.params.id, (err, response) => {
+    if(err) {
+      console.log(err);
+      res.status(500).json(err);
+    } else {
+      console.log('PRODUCT')
+      res.status(200).json(response);
+    }
+  });
+},
+
+getCarousel: (req, res) => {
+  db.getCarousel(req.params.id, (err, response) => {
+    if(err) {
+      console.log(err);
+      res.status(200).json(err);
+    } else {
+      console.log('CAROUSEL', response);
+      res.status(200).json(response);
+    }
+  });
+},
+
+getSizes: (req, res) => {
+  db.getSizes(req.params.id, (err, response) => {
+    if(err) {
+      console.log(err);
+      res.status(200).json(err);
+    } else {
+      console.log('SIZES', response);
+      res.status(200).json(response);
+    }
+  });
+},
+
+getImages: (req, res) => {
+  db.getImages(req.params.id, (err, response) => {
+     if(err) {
+      console.log(err);
+      res.status(200).json(err);
+    } else {
+      console.log('IMAGES', response);
+      res.status(200).json(response);
+    }
+  });
+}
 
 
 

@@ -1,5 +1,29 @@
 <div class="shop-header">
   <h1>SHOP</h1>
+  <div class="shop-header-filter-wrapper">
+    <div class="filter-button">
+      <p>FILTER</p>
+      <h5>+</h5>
+    </div>
+    <div class="collection-button">
+      <p>COLLECTION</p>
+      <h5>+</h5>
+      <div class="collection-dropdown-menu">
+        <p ng-click="filter1 = 'watch'">Wood Watch</p>
+        <p ng-click="filter1 = 'desk items'">Desk Collection</p>
+        <p ng-click="filter1 = 'everyday carry'">Everyday Carry</p>
+      </div>
+    </div>
+    <div class="material-button">
+      <p>MATERIAL</p>
+      <h5>+</h5>
+      <div class="material-dropdown-menu">
+        <p ng-click="filter2 = 'maple'">Maple</p>
+        <p ng-click="filter2 = 'walnut'">Walnut</p>
+        <p ng-click="filter2 = 'leather'">Leather</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- changed .shop-gallery, line 47, 48
@@ -8,14 +32,15 @@ add .product-grid-container, product-link, product-image-container flex items --
 
 <section class='shop-wrapper'>
   <div class='shop-gallery'>
-    <div ng-repeat='product in products' class='product-grid-container'>
+    <div ng-repeat='product in products | filter : {type:filter1 } | filter: filter2 track by $index' class='product-grid-container' id='product-container' ui-sref='product({id:product.id})'>
+
       <!-- <div class=product-grid> -->
         <a class='product-link'>
           <div class='product-image-container'>
-            <img class='product-image' alt="" ng-src='{{product.image1}}'/>
-            
+            <img class='product-image1' id="unique" alt="" ng-src='{{product.image1}}' product='{{product.image2}}' />
+            <img class='product-image2' alt="" ng-src='{{product.image2}}'/>
           </div>
-          <div class='product-info'>
+          <div class='product-info' id='hidden-info'>
             <h4>{{product.name}}</h4>
             <p>{{product.price}}<span class='dash'> | </span> <span>ADD TO CART</span></p>
           </div>

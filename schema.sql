@@ -50,26 +50,49 @@ CREATE TABLE about_attributes (
   attribute TEXT
 );
 
-
-CREATE TABLE orders (
+CREATE TABLE tech_specs(
   id SERIAL PRIMARY KEY,
-  customerName VARCHAR(40),
-  email TEXT,
-  shippingAddress TEXT,
-  billingAddress TEXT,
-  phone TEXT,
-  amount INT
-);
+  name VARCHAR(255),
+  origin1 VARCHAR(255),
+  origin2 VARCHAR(255),
+  origin3 VARCHAR(255),
+  material1 VARCHAR(255),
+  material2 VARCHAR(255),
+  material3 VARCHAR(255),
+  material4 VARCHAR(255),
+  material5 VARCHAR(255),
+  info1 VARCHAR(255),
+  info2 VARCHAR(255),
+  info3 VARCHAR(255),
+  info4 VARCHAR(255),
+  info5 VARCHAR(255),
+  info6 VARCHAR(255),
+  info7 VARCHAR(255),
+  consideration1 VARCHAR(255),
+  consideration2 VARCHAR(255),
+  consideration3 VARCHAR(255),
+  consideration4 VARCHAR(255)
+)
 
-CREATE TABLE orderItems (
+CREATE TABLE dimensions(
   id SERIAL PRIMARY KEY,
-  orderId INT references orders,
-  productId INT references merchandise,
-  quantity INT
-);
+  product_id integer,
+  dimension VARCHAR(255)
+)
 
-CREATE TABLE productImages (
-  id SERIAL PRIMARY KEY,
-  productId INT references merchandise,
-  image1 https://grovemade.com/static/thumbnails/shop/variant/brass-knife-grid-A1_1_645x645_85.jpg?_v=1476734945.36
-);
+-- CREATE TABLE orders (
+--   id SERIAL PRIMARY KEY,
+--   customerName VARCHAR(40),
+--   email TEXT,
+--   shippingAddress TEXT,
+--   billingAddress TEXT,
+--   phone TEXT,
+--   amount INT
+-- );
+
+-- CREATE TABLE orderItems (
+--   id SERIAL PRIMARY KEY,
+--   orderId INT references orders,
+--   productId INT references merchandise,
+--   quantity INT
+-- );
