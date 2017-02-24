@@ -782,6 +782,7 @@ footer {
   src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg"); }
 
 .shop-header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -796,6 +797,124 @@ footer {
     font-size: 60px;
     letter-spacing: 0.4em;
     font-weight: 100; }
+  .shop-header .shop-header-filter-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%; }
+  .shop-header .filter-button {
+    position: relative;
+    text-align: center;
+    width: 21vw;
+    height: auto;
+    border-top: solid white;
+    border-right: solid white;
+    border-width: 1px;
+    cursor: pointer; }
+    .shop-header .filter-button p {
+      padding: 13px;
+      color: white;
+      font-family: "DINNextRoundedLTW01-Regular";
+      font-size: 12px;
+      letter-spacing: .4em;
+      font-weight: 100;
+      text-align: left; }
+    .shop-header .filter-button h5 {
+      float: right;
+      position: absolute;
+      color: white;
+      top: 31%;
+      right: 11px; }
+  .shop-header .shop-header-filter-wrapper:hover .collection-button {
+    opacity: 1;
+    transition: opacity 0.2s linear 0s; }
+  .shop-header .shop-header-filter-wrapper:hover .material-button {
+    opacity: 1;
+    transition: opacity 0.2s linear 0s; }
+  .shop-header .collection-button {
+    position: relative;
+    text-align: center;
+    width: 21vw;
+    height: auto;
+    border-top: solid white;
+    border-right: solid white;
+    border-width: 1px;
+    cursor: pointer;
+    opacity: 0; }
+    .shop-header .collection-button p {
+      padding: 13px;
+      color: white;
+      font-family: "DINNextRoundedLTW01-Regular";
+      font-size: 12px;
+      letter-spacing: .4em;
+      font-weight: 100;
+      text-align: left; }
+    .shop-header .collection-button h5 {
+      position: absolute;
+      color: white;
+      top: 31%;
+      right: 11px; }
+    .shop-header .collection-button .collection-dropdown-menu {
+      width: 21vw;
+      height: auto;
+      position: absolute;
+      right: 0%;
+      z-index: 10;
+      visibility: hidden;
+      background-color: #F5F6F6; }
+      .shop-header .collection-button .collection-dropdown-menu p {
+        float: left;
+        font-size: 12px;
+        cursor: pointer;
+        color: black; }
+      .shop-header .collection-button .collection-dropdown-menu p:hover {
+        opacity: .5; }
+    .shop-header .collection-button select {
+      /*for firefox*/
+      -moz-appearance: none;
+      /*for chrome*/
+      -webkit-appearance: none; }
+  .shop-header .collection-button:hover .collection-dropdown-menu {
+    visibility: visible; }
+  .shop-header .material-button {
+    position: relative;
+    text-align: center;
+    width: 19vw;
+    height: auto;
+    border-top: solid white;
+    border-right: solid white;
+    border-width: 1px;
+    opacity: 0;
+    cursor: pointer; }
+    .shop-header .material-button p {
+      padding: 13px;
+      color: white;
+      font-family: "DINNextRoundedLTW01-Regular";
+      font-size: 12px;
+      letter-spacing: .4em;
+      font-weight: 100;
+      text-align: left; }
+    .shop-header .material-button h5 {
+      position: absolute;
+      color: white;
+      top: 31%;
+      right: 11px; }
+    .shop-header .material-button .material-dropdown-menu {
+      width: 19vw;
+      height: auto;
+      position: absolute;
+      right: -0.3%;
+      z-index: 10;
+      visibility: hidden;
+      background-color: #F5F6F6; }
+      .shop-header .material-button .material-dropdown-menu p {
+        cursor: pointer;
+        color: black; }
+      .shop-header .material-button .material-dropdown-menu p:hover {
+        opacity: .5; }
+  .shop-header .material-button:hover .material-dropdown-menu {
+    visibility: visible; }
 
 .shop-wrapper {
   margin: 0;
