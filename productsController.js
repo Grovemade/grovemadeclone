@@ -85,7 +85,45 @@ getImages: (req, res) => {
       res.status(200).json(response);
     }
   });
+},
+
+addToCart: (req, res) => {
+if (!req.session.cart) {
+  req.session.cart = [];
 }
+  req.session.cart.push(req.body);
+  console.log('adding to cart', req.session.cart)
+  res.json(req.session.cart)
+},
+
+getCart: (req, res) => {
+  console.log('getting cart', req.session.cart);
+  res.json(req.session.cart);
+},
+
+// removeFromCart: (req, res) => {
+//   // console.log(req.params.id)
+//   console.log('trying to remove', req.session.cart);
+//   for (let i = 0; i < req.session.cart.length; i++) {
+//     if (req.session.cart[i].productId == req.params.id) {
+//       req.session.cart.splice(i, 1);
+//     }
+//   }
+//   res.json(req.session.cart);
+// },
+//
+// updateQuantity: (req, res) => {
+//   // console.log('trying to update', req.body);
+//   for (let i = 0; i < req.session.cart.length; i++) {
+//     if (req.session.cart[i].productId == req.params.productId) {
+//       // console.log('original quantity', req.session.cart[i].productQuantity);
+//       req.session.cart[i].productQuantity = req.body.productQuantity;
+//       console.log('new quantity', req.session.cart[i].productQuantity);
+//       res.json(req.session.cart);
+//     }
+//   }
+// },
+
 
 
 
