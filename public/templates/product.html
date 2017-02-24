@@ -1,23 +1,32 @@
 <section class="productPage">
+  <div class="productPageNav"></div>
   <div class="productPageWrapper">
     <div class="upperCarousel"></div>
     <div class="productDescription">
       <div>
-        <h2 class="productTitle">{{item[0].name}}</h2>
-        <p class="price">{{sizes[0].price}}</p>
-        <p class="description">{{item[0].description}}</p>
-        <select  ng-model="size" ng-options='item.size for item in sizes' ng-change="getImages(size)" class="dropdown">
-          <!--<option ng-options='item for item in sizes'>{{size.size}}</option>-->
+        <div class="productTitle">
+          <h2>{{item[0].name}}</h2>
+          <!--<p>{{item[0].name}}</p>-->
+        </div>
+        <div class="price">
+          <p>{{sizes[0].price}}</p>
+        </div>
+        <div>
+          <p class="description">{{item[0].description}}</p>
+          <div>
+            <div>
+              <p class="shipDate">Ships in 4-6 weeks.</p>
+              <div class="selectAndCart">
+                <select ng-model="size" ng-options='item.size for item in sizes' ng-change="getImages(size)" class="dropdown"></select>
+                <button class="addToCart">ADD TO CART</button>
+              </div>
+              <div><p>Scroll For More Info</p></div>
+              <div><p>Orders Over $150 Ship Free (USA)</p></div>
+            </div>
+          </div>
+          
+        </div>
+        <div clas="lowerCarousel"></div>
 
-        </select>
-        <button class="addToCart">ADD TO CART</button>
-        <p>Scroll For More Info</p>
-        <p>Orders Over $150 Ship Free (USA)</p>
-      </div>
-    </div>
-  </div>
-
-  <div clas="lowerCarousel"></div>
-
-  <div class="techSpecs"></div>
+        <div class="techSpecs"></div>
 </section>
