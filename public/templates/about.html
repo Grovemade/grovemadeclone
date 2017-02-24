@@ -1,3 +1,4 @@
+
 <div class="about-header">
 
 </div>
@@ -32,7 +33,7 @@
     <h1 id="stylize-headers">We believe our goods are meaningful because of the thoughtfulness of the people behind them.</h1>
 </div>
 
-<div class="all-employees" ng-click=showEmployee(employee.id)>
+<div class="all-employees" ng-click=showEmployee(employee.id) ng-click=hideEmployee(id)>
     <div class="single-employees" ng-repeat="employee in employees track by $index" >
       <div id='test{{$index}}'class = "image-wrapper" >
         <img class="single-employees-img"  src="{{employee.hover_thumb}}">
