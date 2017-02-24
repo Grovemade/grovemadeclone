@@ -1,8 +1,85 @@
-.productPageWrapper {
-  padding-top: 500px;
+
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {font-family: "DINNextRoundedLTW01-Regular";
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg");
 }
 
+$font: "DINNextRoundedLTW01-Regular";
+// https://www.onlinewebfonts.com/download/1daa609fdca8da38e5bcbb12c2a987db
+
+.productPageWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.productPageNav {
+  background-color: rgb(66, 66, 66);
+  width: 100%;
+  height: 110px;
+}
+
+.upperCarousel {
+  width: 64.7%;
+  height: 880px;
+}
+
+.productDescription {
+  font-family: $font;
+  font-size: 14px;
+  width: 25.6%;
+  height: 880px;
+  display: flex;
+  background-color:#F6F6F6;
+  justify-content: center;
+  align-items: center;
+  padding-left: 45px;
+  padding-right: 85px;
+}
+
+.productTitle {
+  // font-size: 28px; left here on purpose! CH
+  font-size: 24px;
+  padding-bottom: 20px;
+  // font-family: Georgia; left here on purpose! CH
+}
+
+.price {
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.description {
+  padding-bottom: 20px;
+}
+
+.shipDate {
+  padding-bottom: 20px;
+}
+
+.selectAndCart {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.addToCart {
+  font-family: $font;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: rgb(66, 66, 66);
+  height: 42px;
+  border: none;
+  border-radius: 2px;
+  margin-top: 10px;
+}
 
 .dropdown {
-  width: 250px;
+  border-radius: 2px;
 }
+
