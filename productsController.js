@@ -101,6 +101,18 @@ getCart: (req, res) => {
   res.json(req.session.cart);
 },
 
+updateQuantity: (req, res) => {
+  console.log('trying to update', req.body);
+  for (let i = 0; i < req.session.cart.length; i++) {
+    if (req.session.cart[i].productId == req.params.id) {
+      console.log('original quantity', req.session.cart[i].quantity);
+      req.session.cart[i].quantity = req.body.quantity;
+      console.log('new quantity', req.session.cart[i].quantity);
+      res.json(req.session.cart);
+    }
+  }
+},
+
 // removeFromCart: (req, res) => {
 //   // console.log(req.params.id)
 //   console.log('trying to remove', req.session.cart);
@@ -111,20 +123,5 @@ getCart: (req, res) => {
 //   }
 //   res.json(req.session.cart);
 // },
-//
-// updateQuantity: (req, res) => {
-//   // console.log('trying to update', req.body);
-//   for (let i = 0; i < req.session.cart.length; i++) {
-//     if (req.session.cart[i].productId == req.params.productId) {
-//       // console.log('original quantity', req.session.cart[i].productQuantity);
-//       req.session.cart[i].productQuantity = req.body.productQuantity;
-//       console.log('new quantity', req.session.cart[i].productQuantity);
-//       res.json(req.session.cart);
-//     }
-//   }
-// },
 
-
-
-
-};
+}; //end of controller
