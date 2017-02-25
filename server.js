@@ -43,6 +43,8 @@ app.get('/sizes/:id', productsController.getSizes);
 app.get('/images/:id', productsController.getImages);
 app.post('/cart', productsController.addToCart);
 app.get('/cart', productsController.getCart);
+app.put('/cart/:productId', productsController.updateQuantity);
+// app.delete('/cart/:id', productsController.removeFromCart);
 
 
 app.listen(3050, () => {

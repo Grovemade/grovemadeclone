@@ -29,8 +29,9 @@ $scope.getImages = (size) => {
 
 $scope.quantity = 1;
   $scope.addToCart = (size, quantity) => {
+    console.log('SIZE', size);
     // $rootScope.cartTotal += Number(quantity);
-    let productId = $scope.item[0].id;
+    let productId = $scope.item[0].product_id;
     let productName = $scope.item[0].name;
     if($scope.item.image1 == null){
       var productImage = $scope.item[0].image2;

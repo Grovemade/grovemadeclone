@@ -5,7 +5,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       method: 'GET',
       url: '/shop'
     }).then((response) => {
-      console.log('SRVC', response);
+      // console.log('SRVC', response);
       return response;
     });
   };
@@ -52,7 +52,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       method: 'GET',
       url: '/carousel/' + id
     }).then((response) => {
-      console.log('SRVC carousel', response);
+      // console.log('SRVC carousel', response);
       return response;
     });
   };
@@ -62,7 +62,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       method: 'GET',
       url: '/sizes/' + id
     }).then((response) => {
-      console.log('SRVC sizes', response);
+      // console.log('SRVC sizes', response);
       return response;
     });
   };
@@ -73,7 +73,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       method: 'GET',
       url: '/images/' + id
     }).then((response) => {
-      console.log('SRVC images', response);
+      // console.log('SRVC images', response);
       return response;
     });
   };
@@ -100,13 +100,36 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       method: 'GET',
       url: '/cart'
     }).then((response) => {
-      console.log('SRVC CART', response)
+      // console.log('SRVC CART', response)
       return response;
     });
   };
 
+  this.updateQuantity = (productId, quantity) => {
+    let product = {
+      productId: productId,
+      quantity: quantity
+    }
+    console.log('SRVC product', product);
+    return $http({
+      method: 'PUT',
+      url: '/cart/'+productId,
+      data: product
+    }).then((response) => {
+      console.log('SRVC UPDATING', response);
+    })
+  };
+
+  // this.removeFromCart = (item) => {
+  //   let id = item.productId
+  //   return $http({
+  //     method: 'DELETE',
+  //     url: '/cart/'+id
+  //   }).then((response) => {
+  //     console.log('SRVE REMOVE FROM CART', response);
+  //     return response;
+  //   });
+  // };
 
 
-
-
-});
+});//end of service
