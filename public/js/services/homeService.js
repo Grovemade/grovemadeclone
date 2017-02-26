@@ -5,7 +5,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       method: 'GET',
       url: '/shop'
     }).then((response) => {
-      console.log('SRVC', response);
+      // console.log('SRVC', response);
       return response;
     });
   };
@@ -15,7 +15,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       method: 'GET',
       url: '/about'
     }).then((response) => {
-      console.log('SRVC', response);
+      // console.log('SRVC', response);
       return response;
     });
   };
@@ -25,7 +25,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       method: 'GET',
       url: '/journal'
     }).then((response) => {
-      console.log('SRVC', response);
+      // console.log('SRVC', response);
       return response;
     });
   };
@@ -37,13 +37,12 @@ angular.module('grovemade').service('homeSrvc', function($http) {
     });
   };
 
-
   this.getProduct = (id) => {
     return $http({
       method: 'GET',
       url: '/product/' + id
     }).then((response) => {
-      console.log('SRVC product', response);
+      // console.log('SRVC product', response);
       return response;
     });
   };
@@ -53,7 +52,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       method: 'GET',
       url: '/carousel/' + id
     }).then((response) => {
-      console.log('SRVC carousel', response);
+      // console.log('SRVC carousel', response);
       return response;
     });
   };
@@ -63,7 +62,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       method: 'GET',
       url: '/sizes/' + id
     }).then((response) => {
-      console.log('SRVC sizes', response);
+      // console.log('SRVC sizes', response);
       return response;
     });
   };
@@ -74,13 +73,63 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       method: 'GET',
       url: '/images/' + id
     }).then((response) => {
-      console.log('SRVC images', response);
+      // console.log('SRVC images', response);
       return response;
     });
   };
 
+  this.addToCart = (productId, productName, productImage, size, quantity) => {
+    let item = {
+      productId: productId,
+      productName: productName,
+      productImage: productImage,
+      size: size,
+      quantity: quantity
+    }
+    return $http({
+      method: 'POST',
+      url: '/cart',
+      data: item
+    }).then(() => {
+      console.log('SRVC item added')
+    });
+  };
+
+  this.getCart = () => {
+    return $http({
+      method: 'GET',
+      url: '/cart'
+    }).then((response) => {
+      // console.log('SRVC CART', response)
+      return response;
+    });
+  };
+
+  this.updateQuantity = (productId, quantity) => {
+    let product = {
+      productId: productId,
+      quantity: quantity
+    }
+    console.log('SRVC product', product);
+    return $http({
+      method: 'PUT',
+      url: '/cart/'+productId,
+      data: product
+    }).then((response) => {
+      console.log('SRVC UPDATING', response);
+    })
+  };
+
+  // this.removeFromCart = (item) => {
+  //   let id = item.productId
+  //   return $http({
+  //     method: 'DELETE',
+  //     url: '/cart/'+id
+  //   }).then((response) => {
+  //     console.log('SRVE REMOVE FROM CART', response);
+  //     return response;
+  //   });
+  // };
 
 
-
-
-});
+});//end of service
