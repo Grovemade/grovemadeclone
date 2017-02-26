@@ -46,6 +46,12 @@ angular.module('grovemade', ['ui.router'])
     controller:'journalCtrl'
   })
 
+  .state('4', {
+    url:'/journal/what-kind-case-buyer-are-you-flowchart',
+    templateUrl:'./templates/what-kind-case-buyer-are-you-flowchart.html',
+    controller:'journalCtrl'
+  })
+
   .state('product', {
     url: '/product/:id',
     templateUrl: '/templates/product.html',
