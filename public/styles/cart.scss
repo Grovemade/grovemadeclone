@@ -1,5 +1,242 @@
+@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+@font-face {font-family: "DINNextRoundedLTW01-Regular";
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg");
+}
+
+$font: "DINNextRoundedLTW01-Regular";
+$cartgrey: #bcbec0;
+
+
 .productPageNav {
   background-color: rgb(66, 66, 66);
   width: 100%;
   height: 110px;
+}
+
+.shopping-header {
+  text-align: left;
+  width: 100vw;
+  height: 70px;
+  font-size: 15px;
+  letter-spacing: 1.3px;
+  font-family: $font;
+  position: relative;
+}
+
+.cart-link {
+  position: absolute;
+  left: 70px;
+  bottom: 0;
+
+}
+
+.shopping-link {
+  color: $cartgrey;
+  text-align: right;
+  position: absolute;
+  right: 70px;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.top-line {
+  width: 100%;
+  height: .5px;
+  background-color: $cartgrey;
+  margin: 10px 0;
+}
+
+.cart-container {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $font;
+  color: #424242;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: .1em;
+  padding-left: 4.321%;
+  padding-right: 4.321%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cart-content-wrapper {
+  padding-right: 1.08025%;
+  padding-left: 1.08025%;
+  padding-bottom: 100px;
+  width: 70%;
+}
+
+.shipping-box {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.shipping-box-text {
+  border: 2px solid #f69368;
+  color: #f69368;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.cart-headers {
+  color: $cartgrey;
+  width: 100%;
+  padding-bottom: 10px;
+  float: left;
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+  float: left;
+  list-style-type: none;
+  .cart-header-product {
+    width: 40%;
+    float: left;
+    margin-left: 27%;
+    // text-align: center;
+  }
+  .cart-header-price {
+    width: 10%;
+    float: left;
+  }
+  .cart-header-quantity {
+    width: 13%;
+    float: left;
+  }
+  .cart-header-remove {
+    width: 10%;
+    float: left;
+  }
+}
+
+.cart-row {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-top: 1px solid #f1f1f2;
+  border-left: 1px solid #f1f1f2;
+  border-right: 1px solid #f1f1f2;
+  border-bottom: 1px solid #f1f1f2;
+  overflow: auto;
+}
+
+.cart-img-wrapper {
+  width: 25%;
+  float: left;
+  padding-right: 1.08025%;
+  padding-left: 1.08025%;
+  img {
+    width: 150px;
+    height: 150px;  }
+}
+
+.cart-product {
+  width: 40%;
+  float: left;
+  font-size: 12px;
+  margin-left: 0%;
+}
+
+.cart-price {
+  width: 10%;
+  float: left;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.cart-quantity {
+  width: 12.8%;
+  float: left;
+  input {
+    border: 1px solid #f1f1f2;
+    letter-spacing: .1em;
+    color: #666;
+    font-weight: 300;
+    padding: 10px 0;
+    font-size: 12px;
+    min-width: inherit;
+    width: 35px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  input:focus {
+    outline: none;
+  }
+}
+
+.cart-remove-btn {
+  width: 10%;
+  float: left;
+  text-align: left;
+  font-size: 18px;
+}
+
+.subtotal-content {
+  border: 1px solid #f1f1f2;
+  border-top: none;
+  padding: 30px;
+  overflow: auto;
+}
+
+.totals {
+  width: 40%;
+  float: right;
+  overflow: auto;
+}
+
+.subtotal {
+  float: left;
+  width: 50%;
+  font-size: 20px;
+  font-weight: 100;
+}
+.subtotal-span {
+  float: left;
+  width: 50%;
+  font-size: 20px;
+  text-align: right;
+  font-weight: 100;
+}
+
+.terms-disclaimer1 {
+  margin-top: 40px;
+  color: $cartgrey;
+}
+
+.terms-disclaimer2 {
+  margin-top: 20px;
+  color: $cartgrey;
+  span {
+    color: black;
+    font-size: 12px;
+  }
+}
+
+.checkout-btn {
+  margin-top: 30px;
+  min-width: inherit;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 20px;
+  letter-spacing: .2em;
+  line-height: 34px;
+  border: 3px solid #424242;
+  background: white;
+  color: #424242;
+  font-weight: bold;
+}
+.checkout-btn:hover {
+  background: black;
+  color: white;
 }
