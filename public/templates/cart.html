@@ -1,38 +1,53 @@
-<section class='cart-wrapper'>
+<section class='cart-page-wrapper'>
   <div class="productPageNav"></div>
   <div class='shopping-header'>
-    <h1>CART <span>CONTINUE SHOPPING</span></h1>
-    <div class='top-line'></div>
+    <p class='cart-link'>CART</p>
+    <p><span class='shopping-link' ui-sref='shop'>CONTINUE SHOPPING</span></p>
   </div>
-  <div>FREE SHIPPING ON ORDERS OVER $150 (U.S.A. ONLY)</div>
-  <div class='cart-headers'>
-    <p>PRODUCT<span class='header-price'>PRICE</span><span class='header-quantity'>QTY</span></p>
-  </div>
-  <div class='cart-row' ng-repeat='item in cart track by $index'>
-    <div class='cart-img-wrapper'>
-      <img ng-src={{item.productImage}} alt="product image">
+  <div class='top-line'></div>
+  <div class='cart-container'>
+    <div class='cart-content-wrapper'>
+      <div class='shipping-box'>
+        <div class='shipping-box-text'>FREE SHIPPING ON ORDERS OVER $150 (U.S.A. ONLY)</div>
+      </div>
+      <div class='cart-headers'>
+        <ul>
+          <li class='cart-header-product'>PRODUCT</li>
+          <li class='cart-header-price'>PRICE</li>
+          <li class='cart-header-quantity'>QTY</li>
+          <li class='cart-header-remove'>REMOVE</li>
+        </ul>
+        <!-- <p>PRODUCT<span class='header-price'>PRICE</span><span class='header-quantity'>QTY</span></p> -->
+      </div>
+      <div class='cart-row' ng-repeat='item in cart track by $index'>
+        <div class='cart-img-wrapper'>
+          <img ng-src={{item.productImage}} alt="product image">
+        </div>
+        <div class='cart-product'>
+          <p>{{item.productName}}</p>
+          <p>{{item.size.size}}</p>
+        </div>
+        <div>
+          <div class='cart-price'>
+            <p>${{item.size.price}}</p>
+          </div>
+        <form class='cart-quantity'>
+          <input ng-model='item.productQuantity' ng-change='updateQuantity(item)'>
+        </form>
+      </div>
+      <div class='cart-remove-btn ion-close-circled' ng-click='removeFromCart(item)'></div>
+      </div>
+      <div class='subtotal-content'>
+        <div class='totals'>
+          <p class='subtotal'>Subtotal</p> <span class='subtotal-span' >{{subtotal | currency}}</span>
+          <p class='terms-disclaimer1'>All items ship together according to longest lead time.</p>
+          <p class='terms-disclaimer2'><span>INTERNATIONAL ORDERS:</span> Any customs fees must be paid fully by the customer.</p>
+          <button class='checkout-btn'id='custombutton'>CONTINUE TO CHECK OUT
+          </button>
+        </div>
+      </div>
+
     </div>
-    <div class='cart-item-text'>
-      <p>{{item.productName}}</p>
-      <p>{{item.size.size}}</p>
-    </div>
-    <div>
-    <form class='cart-quantity'>
-      <input ng-model='item.quantity' ng-change='updateQuantity(item)'>
-    </form>
-  </div>
-    <div class='cart-item-price'>
-      <p>{{item.size.price}}</p>
-    </div>
-    <div class='cart-remove-btn ion-close-circled' ng-click='removeFromCart(item)'></div>
-    <hr class='repeat-line'>
-  </div>
-  <div class='subtotal'>
-    <p>Subtotal <span class='subtotal-span' >{{subtotal | currency}}</span></p>
-  </div>
-  <hr align='right' width='50%'>
-  <div class='checkout-btn-wrapper'>
-    <a class="checkout-button" id='custombutton'>CHECKOUT</a>
   </div>
 
   {{totalQuantity}}

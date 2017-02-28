@@ -4,65 +4,64 @@ angular.module('grovemade')
   $scope.subtotal = 0;
   $scope.cart;
 
-  let cartTotal = () => {
-    console.log('running cartTotal', $scope.cart);
+  let cartSubtotal = () => {
+    // console.log('running cartTotal', $scope.cart);
     if (!$scope.cart || $scope.cart.length === 0) {
       $scope.cart = [];
       $scope.subtotal = 0;
     } else {
       $scope.cart.forEach((element, index) => {
         // console.log('EACH', element);
-        $scope.subtotal += parseInt(element.size.price) * parseInt(element.quantity);
-        console.log('SUBTOTAL', $scope.subtotal);
+        $scope.subtotal += parseInt(element.size.price) * parseInt(element.productQuantity);
+        // console.log('SUBTOTAL', $scope.subtotal);
       });
     };
   };
 
-  // let findTotalItems = () => {
-  //   $scope.totalItems = 0;
-  //   for (let i = 0; i < $scope.cart.length; i++) {
-  //     $scope.totalItems += Number($scope.cart[i].quantity);
-  //   }
-  //   console.log($scope.totalItems);
-  //   return $scope.totalItems;
-  // };
+  let findTotalItems = () => {
+    $scope.totalItems = 0;
+    for (let i = 0; i < $scope.cart.length; i++) {
+      $scope.totalItems += Number($scope.cart[i].productQuantity);
+    }
+    console.log($scope.totalItems);
+    return $scope.totalItems;
+  };
 
   homeSrvc.getCart().then((response) => {
     $scope.cart = response.data;
     // console.log('Cart CTRL', $scope.cart);
-    cartTotal();
+    cartSubtotal();
   }).catch((err) => {
     console.log(err);
   });
 
   $scope.updateQuantity = (item) => {
-    // $rootScope.cartTotal = findTotalItems();
-    console.log('UPDATE THIS', item)
-    homeSrvc.updateQuantity(item.productId, item.quantity);
-    console.log('UPDATE PARAMS', item.productId, item.quantity);
+    $rootScope.cartTotal = findTotalItems();
+    // console.log('UPDATE THIS', item)
+    homeSrvc.updateQuantity(item.productId, item.productQuantity);
       homeSrvc.getCart().then((response) => {
         $scope.cart = response.data;
         // console.log($scope.cart);
         $scope.subtotal = 0;
-        cartTotal();
+        cartSubtotal();
       }).catch((err) => {
         console.log(err);
       });
   };
 
-  // $scope.removeFromCart = (item) => {
-  //   $rootScope.cartTotal = findTotalItems();
-  //   console.log('remove CTRL', item)
-  //   homeSrvc.removeFromCart(item).then(() => {
-  //     homeSrvc.getCart().then((response) => {
-  //       $scope.cart = response.data;
-  //       $scope.subtotal = 0;
-  //       cartTotal();
-  //       $rootScope.cartTotal = findTotalItems();
-  //     }).catch((err) => {
-  //       console.log(err);
-  //     });
-  //   });
-  // };
+  $scope.removeFromCart = (item) => {
+    $rootScope.cartTotal = findTotalItems();
+    // console.log('remove CTRL', item)
+    homeSrvc.removeFromCart(item).then(() => {
+      homeSrvc.getCart().then((response) => {
+        $scope.cart = response.data;
+        $scope.subtotal = 0;
+        cartSubtotal();
+        $rootScope.cartTotal = findTotalItems();
+      }).catch((err) => {
+        console.log(err);
+      });
+    });
+  };
 
 }); //end of controller
