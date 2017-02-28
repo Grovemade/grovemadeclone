@@ -27,18 +27,18 @@ $scope.getImages = (size) => {
   })
 };
 
-$scope.quantity = 1;
-  $scope.addToCart = (size, quantity) => {
-    console.log('SIZE', size);
-    // $rootScope.cartTotal += Number(quantity);
-    let productId = $scope.item[0].product_id;
-    let productName = $scope.item[0].name;
-    if($scope.item.image1 == null){
-      var productImage = $scope.item[0].image2;
-    } else {
-      var productImage = $scope.item[0].image1;
-    }
-    homeSrvc.addToCart(productId, productName, productImage, size, quantity);
-  };
+
+$scope.addToCart = (size, productQuantity) => {
+  console.log('SIZE', size);
+  $rootScope.cartTotal += Number(productQuantity);
+  let productId = $scope.item[0].product_id;
+  let productName = $scope.item[0].name;
+  if(!$scope.item[0].image1){
+    var productImage = $scope.item[0].image2;
+  } else {
+    var productImage = $scope.item[0].image1;
+  }
+  homeSrvc.addToCart(productId, productName, productImage, size, productQuantity);
+};
 
 }); //end of controller

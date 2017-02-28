@@ -1,12 +1,17 @@
-@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
-@font-face {font-family: "DINNextRoundedLTW01-Regular";
-    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
-    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg");
+// @import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
+// @font-face {font-family: "DINNextRoundedLTW01-Regular";
+//     src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+//     src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"),
+//     url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"),
+//     url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"),
+//     url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"),
+//     url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg");
+// }
+@font-face {
+    font-family: "DINNextRoundedLTW01-Regular";
+    src: url("./fonts/DIN Next Rounded LT W01 Regular/DIN Next Rounded LT W01 Regular.ttf");
 }
+
 @import url(//db.onlinewebfonts.com/c/9ae5e19516bc6428f1327ff3311b2617?family=DINNextW01-Light);
 @font-face {font-family: "DINNextW01-Light";
     src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot");
@@ -16,6 +21,8 @@
     url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.svg#DINNextW01-Light") format("svg");
 }
+
+
 
 $font: "DINNextRoundedLTW01-Regular";
 $font2: "DINNextW01-Light";
