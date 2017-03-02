@@ -57,7 +57,4 @@ angular.module('grovemade', ['ui.router'])
     templateUrl: '/templates/cart.html',
     controller: 'cartCtrl'
   })
-
-
-
 })
