@@ -163,5 +163,16 @@ angular.module('grovemade').service('homeSrvc', function($http) {
     });
   };
 
+  this.postOrder = (token, total, cart) => {
+    console.log('SRVC TOKEN', token);
+    return $http({
+      method: 'POST',
+      url: '/order',
+      data: {token, total, cart}
+    }).then((response) => {
+      console.log('SRVC token', response);
+    });
+  };
+
 
 });//end of service

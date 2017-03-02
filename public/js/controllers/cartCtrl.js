@@ -29,7 +29,8 @@ angular.module('grovemade')
 
   homeSrvc.getCart().then((response) => {
     $scope.cart = response.data;
-    // console.log('Cart CTRL', $scope.cart);
+    console.log('Cart CTRL', $scope.cart);
+    console.log('size', $scope.cart.size);
     cartSubtotal();
   }).catch((err) => {
     console.log(err);
@@ -63,5 +64,35 @@ angular.module('grovemade')
       });
     });
   };
+
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_6065FRM1a4tbwIiofznTSYu4',
+    image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+    locale: 'auto',
+    token: function(token) {
+      console.log('CTRL Token', token)
+      // You can access the token ID with `token.id`.
+      // Get the token ID to your server-side code for use.
+      homeSrvc.postOrder(token, $scope.subtotal*100, $scope.cart);
+    }
+  });
+
+  document.getElementById('custombutton').addEventListener('click', function(e) {
+    // Open Checkout with further options:
+    handler.open({
+      name: 'GROVEMADE',
+      description: 'Find What Matters',
+      shippingAddress: true,
+      billingAddress: true,
+      zipCode: true,
+      amount: $scope.subtotal * 100
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation:
+  window.addEventListener('popstate', function() {
+    handler.close();
+  });
 
 }); //end of controller

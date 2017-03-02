@@ -1,7 +1,7 @@
 
 @font-face {
    font-family: "DINNextRoundedLTW01-Regular";
-   src: url("../fonts/dnNext/dnNext.ttf");
+   src: url("fonts/dnNext/dnNext.ttf");
 }
 
 
@@ -236,4 +236,7 @@ ul {
 .checkout-btn:hover {
   background: black;
   color: white;
+}
+.checkout-btn:focus {
+  outline: none;
 }

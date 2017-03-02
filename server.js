@@ -8,6 +8,8 @@ const nodemailer = require('nodemailer');
 const xoauth2 = require('xoauth2');
 const bunyan = require('bunyan');
 const port = 3050;
+const stripe = require("stripe")("sk_test_YWeRVnmViJfikag0T9Z4QH6m");
+
 
 const app = module.exports = express();
 app.use(bodyParser.json());
@@ -48,6 +50,8 @@ app.post('/cart', productsController.addToCart);
 app.get('/cart', productsController.getCart);
 app.put('/cart/:productId', productsController.updateQuantity);
 app.delete('/cart/:id', productsController.removeFromCart);
+app.post('/order', productsController.postOrder);
+
 
 // NODEMAILER
 // Create a SMTP transporter object
