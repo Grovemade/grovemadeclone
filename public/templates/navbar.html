@@ -101,8 +101,9 @@
       <p class='newsletter-content'>Stay up to date on the latest product releases, special offers & Grovemade news by signing up for our newsletter.</p>
       <div class='newsletter-signup-popup'>
         <form>
-          <input type="email" name="email" placeholder="Enter Your Email">
-          <span><button>SUBMIT</button></span>
+          <input type="email" name="email" ng-model="email" placeholder="Enter Your Email">
+          
+          <span><button ng-click='submitEmail(email)'>SUBMIT</button></span>
         </form>
       </div>
     </div>
