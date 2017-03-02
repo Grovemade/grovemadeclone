@@ -41,6 +41,7 @@
     "gulp-webserver": "^0.9.1",
     "gulp.spritesmith": "^6.3.0",
     "massive": "^2.6.0",
+    "stripe": "^4.15.0",
     "underscore": "^1.8.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"

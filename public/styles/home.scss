@@ -1,9 +1,11 @@
 
 @font-face {
    font-family: "DINNextRoundedLTW01-Regular";
-   src: url("../fonts/dnNext/dnNext.ttf");
+   src: url("fonts/dnNext/dnNext.ttf");
 }
 $font: "DINNextRoundedLTW01-Regular";
+$condensed: 'Open Sans Condensed', sans-serif;
+$ropa: 'Ropa Sans', sans-serif;
 $hover: rgba(255,255,255,0.3);
 
 
