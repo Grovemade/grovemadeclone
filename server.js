@@ -47,7 +47,7 @@ app.get('/images/:id', productsController.getImages);
 app.post('/cart', productsController.addToCart);
 app.get('/cart', productsController.getCart);
 app.put('/cart/:productId', productsController.updateQuantity);
-// app.delete('/cart/:id', productsController.removeFromCart);
+app.delete('/cart/:id', productsController.removeFromCart);
 
 // NODEMAILER
 // Create a SMTP transporter object

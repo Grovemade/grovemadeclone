@@ -12,7 +12,7 @@
       </div>
       <div class='cart-headers'>
         <ul>
-          <li class='cart-header-product'>PRODUCT & SIZE</li>
+          <li class='cart-header-product'>PRODUCT</li>
           <li class='cart-header-price'>PRICE</li>
           <li class='cart-header-quantity'>QTY</li>
           <li class='cart-header-remove'>REMOVE</li>
@@ -32,7 +32,7 @@
             <p>${{item.size.price}}</p>
           </div>
         <form class='cart-quantity'>
-          <input ng-model='item.quantity' ng-change='updateQuantity(item)'>
+          <input ng-model='item.productQuantity' ng-change='updateQuantity(item)'>
         </form>
       </div>
       <div class='cart-remove-btn ion-close-circled' ng-click='removeFromCart(item)'></div>

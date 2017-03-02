@@ -1,0 +1,172 @@
+@font-face {
+   font-family: "DINNextRoundedLTW01-Regular";
+   src: url("../fonts/dnNext/dnNext.ttf");
+}
+$font: "DINNextRoundedLTW01-Regular";
+
+.caseBuyer-header {
+background: url("/img/iphone-buyers-guide-cover-C1.jpg");
+height: 400px;
+width: 100%;
+background-position: center center;
+background-size: cover;
+}
+
+.journal-title {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  font-family: $font;
+  font-size: 28px;
+  color: #494c51;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  letter-spacing: .4em;
+}
+
+.intro {
+  flex-direction: column;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-family: $font;
+  font-size: 15.5px;
+  color: #939393;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 200%;
+  padding-bottom: 20px;
+}
+
+.intro-2 {
+  flex-direction: column;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-family: $font;
+  font-size: 15.5px;
+  color: #939393;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 200%;
+  padding-bottom: 55px;
+}
+
+.flowchart-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.flowchart {
+  height: 33%;
+  width: 34%;
+}
+
+.buyer-title {
+  font-family: $font;
+  color: #494c51;
+  font-size: 28px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  letter-spacing: .4em;
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+
+.buyerType-Wrapper {
+  display: flex;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.buyerImage-wrapper {
+  display: flex;
+  padding-top: 95px;
+  width: 225px;
+}
+
+.buyerImage-wrapper-2 {
+  display: flex;
+  padding-top: 35px;
+  width: 225px;
+}
+.buyerImage-wrapper-3 {
+  display: flex;
+  padding-top: 60px;
+  width: 225px;
+}
+
+.buyer-image {
+  width: 229.69px;
+  height: 132.77px;
+}
+
+.buyer-description {
+  font-family: $font;
+  color: #939393;
+  font-size: 15.5px;
+  width: 600px;
+  line-height: 200%;
+}
+
+.description {
+  padding-bottom: 20px;
+}
+
+.pro-con {
+  padding-bottom: 25px;
+}
+
+.pro {
+  padding-bottom: 5px;
+}
+
+.con {
+  padding-bottom: 7px;
+}
+
+.recommendation {
+  padding-bottom: 85px;
+}
+
+.recommendation-2 {
+  padding-bottom: 100px;
+}
+
+.links-wrapper {
+  color: #494c51;
+  font-family: $font;
+  font-size: 15.5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buyer-title-2 {
+  font-family: $font;
+  color: #494c51;
+  font-size: 28px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  letter-spacing: .4em;
+  padding-left: 40px;
+  padding-bottom: 50px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 85px;
+}
+
+.anchor-tag {
+  text-decoration: none;
+}
+
+.anchor-tag:hover {
+  color: red;
+  cursor: pointer;
+}

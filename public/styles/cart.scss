@@ -1,12 +1,9 @@
-@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
-@font-face {font-family: "DINNextRoundedLTW01-Regular";
-    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
-    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg");
+
+@font-face {
+   font-family: "DINNextRoundedLTW01-Regular";
+   src: url("../fonts/dnNext/dnNext.ttf");
 }
+
 
 $font: "DINNextRoundedLTW01-Regular";
 $cartgrey: #bcbec0;

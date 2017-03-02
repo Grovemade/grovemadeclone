@@ -1,7 +1,9 @@
 angular.module('grovemade').directive('navbar', () => {
   return{
     templateUrl: './templates/navbar.html',
+
     controller: function($state, $rootScope, $scope, homeSrvc){
+
       $(document).ready(function(){
         $('.nav').removeClass('sticky-nav');
         var scroll_pos = 0;
@@ -14,8 +16,6 @@ angular.module('grovemade').directive('navbar', () => {
             }
         });
       });
-
-      // var isActive = false;
 
       $('.newsletter-open').on('click', function() {
         // isActive = !isActive;

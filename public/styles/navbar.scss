@@ -1,11 +1,7 @@
-@import url(//db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DINNextRoundedLTW01-Regular);
-@font-face {font-family: "DINNextRoundedLTW01-Regular";
-    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
-    src: url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DINNextRoundedLTW01-Regular") format("svg");
+// @import url('../styles/fonts/DIN Next Rounded LT W01 Regular/DIN Next Rounded LT W01 Regular.ttf');
+@font-face {
+   font-family: "DINNextRoundedLTW01-Regular";
+   src: url("../fonts/dnNext/dnNext.ttf");
 }
 $font: "DINNextRoundedLTW01-Regular";
 
@@ -96,7 +92,7 @@ $font: "DINNextRoundedLTW01-Regular";
 .nav-newsletter-cart-wrapper{
   width: 217px;
   position: fixed;
-  right: 55px;
+  right: 60px;
   z-index: 10;
 }
 .nav-newsletter {
@@ -117,9 +113,20 @@ $font: "DINNextRoundedLTW01-Regular";
   position: relative;
   top: 5px;
   height: 26px;
-  width: 22px;
+  width: 20px;
   z-index: 10;
+  overflow: auto;
 }
+.nav-cart-total {
+  float: right;
+  position: relative;
+  color: white;
+  top: 5px;
+  right: -10px;
+  font-size: 17px;
+}
+
+
 
 .newsletter-wrapper {
   position: fixed;
