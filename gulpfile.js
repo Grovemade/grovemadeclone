@@ -5,6 +5,7 @@ var babel = require('gulp-babel');
 var plumber = require('gulp-plumber');
 var sourcemaps = require('gulp-sourcemaps');
 var watch = require('gulp-watch');
+var nodemailer = require('nodemailer');
 
 const paths = {
   scssSource: './public/styles/**/*.scss',

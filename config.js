@@ -1,3 +1,7 @@
 module.exports = {
-  sessionSecret: 'keyboard cat'
+  sessionSecret: 'WhatsYourSecret?',
+  gmail: {
+    user:  'grovemade4you@gmail.com',
+    pass: 'sharedaccount4'
+  }
 }

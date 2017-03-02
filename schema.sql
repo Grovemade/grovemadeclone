@@ -80,6 +80,17 @@ CREATE TABLE dimensions(
   dimension VARCHAR(255)
 )
 
+
+
+CREATE TABLE subscription(
+  id SERIAL PRIMARY KEY,
+  email VARCHAR(75)
+)
+
+INSERT INTO subscription
+(email)
+values ($1);
+
 CREATE TABLE orders (
   id SERIAL PRIMARY KEY,
   customerName VARCHAR(40),

@@ -70,6 +70,4 @@ angular.module('grovemade', ['ui.router'])
     controller: 'checkoutCtrl'
   })
 
-
-
 })
