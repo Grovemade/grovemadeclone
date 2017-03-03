@@ -120,25 +120,6 @@ angular.module('grovemade').service('homeSrvc', function($http) {
     })
   };
 
-
-
-  this.addToCart = (productId, productName, productImage, size, quantity) => {
-    let item = {
-      productId: productId,
-      productName: productName,
-      productImage: productImage,
-      size: size,
-      quantity: quantity
-    }
-    return $http({
-      method: 'POST',
-      url: '/cart',
-      data: item
-    }).then(() => {
-      console.log('SRVC item added')
-    });
-  };
-
   this.submitEmail = (email) => {
     let subscription = {
       email: email
@@ -151,7 +132,7 @@ angular.module('grovemade').service('homeSrvc', function($http) {
       console.log('SRVC sending email')
     });
   };
-  
+
   this.removeFromCart = (item) => {
     let id = item.productId;
     return $http({

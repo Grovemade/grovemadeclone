@@ -13,7 +13,7 @@ angular.module('grovemade')
       $scope.cart.forEach((element, index) => {
         // console.log('EACH', element);
         $scope.subtotal += parseInt(element.size.price) * parseInt(element.productQuantity);
-        // console.log('SUBTOTAL', $scope.subtotal);
+        console.log('SUBTOTAL', $scope.subtotal);
       });
     };
   };
@@ -30,11 +30,13 @@ angular.module('grovemade')
   homeSrvc.getCart().then((response) => {
     $scope.cart = response.data;
     console.log('Cart CTRL', $scope.cart);
-    console.log('size', $scope.cart.size);
+    $scope.test = $scope.cart;
+    console.log('size', $scope.test.size);
     cartSubtotal();
   }).catch((err) => {
     console.log(err);
   });
+
 
   $scope.updateQuantity = (item) => {
     $rootScope.cartTotal = findTotalItems();

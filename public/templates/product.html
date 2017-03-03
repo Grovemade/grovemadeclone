@@ -4,7 +4,7 @@
     <div class="upperCarousel">
       <div ng-click="previous(); stop()"><span class='ion-chevron-left'></span></div>
       <img ng-if="base" class="baseImage" ng-src="{{currentImg}}" />
-      <img ng-if='size' class="carouselImage" ng-src="{{currentImg2}}" />
+      <img ng-if='sizeboolean' class="carouselImage" ng-src="{{currentImg2}}" />
       <div ng-click="next(); stop()"><span class='ion-chevron-right'></span></div>
     </div>
     <div class="productDescription">

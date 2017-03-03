@@ -2,7 +2,7 @@ angular.module('grovemade')
   .controller('productCtrl', ($scope, homeSrvc, $stateParams, $rootScope) => {
 
     $scope.base = true;
-    $scope.size = false;
+    $scope.sizeboolean = false;
 
 
     homeSrvc.getProduct($stateParams.id).then((response) => {
@@ -26,9 +26,9 @@ angular.module('grovemade')
 
     $scope.getImages = (size) => {
       $scope.base = false
-      $scope.size = true
+      $scope.sizeboolean = true
       homeSrvc.getImages(size).then((response) => {
-        console.log('SIZE ID', size);
+        // console.log('SIZE ID', size);
         let imageObj = response.data;
         $scope.images = []
         for (var i = 0; i < imageObj.length; i++) {
@@ -36,7 +36,7 @@ angular.module('grovemade')
         }
         $scope.currentImg2 = $scope.images[0];
         $scope.imageIndex = 0;
-        console.log('IMAGES', $scope.images);
+        // console.log('IMAGES', $scope.images);
       }).catch((err) => {
         console.log(err);
       })
