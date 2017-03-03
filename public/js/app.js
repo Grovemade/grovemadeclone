@@ -64,6 +64,10 @@ angular.module('grovemade', ['ui.router'])
     controller: 'cartCtrl'
   })
 
-
+  .state('checkout', {
+    url: '/checkout',
+    templateUrl: '/templates/checkout.html',
+    controller: 'checkoutCtrl'
+  })
 
 })

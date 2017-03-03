@@ -120,6 +120,38 @@ angular.module('grovemade').service('homeSrvc', function($http) {
     })
   };
 
+
+
+  this.addToCart = (productId, productName, productImage, size, quantity) => {
+    let item = {
+      productId: productId,
+      productName: productName,
+      productImage: productImage,
+      size: size,
+      quantity: quantity
+    }
+    return $http({
+      method: 'POST',
+      url: '/cart',
+      data: item
+    }).then(() => {
+      console.log('SRVC item added')
+    });
+  };
+
+  this.submitEmail = (email) => {
+    let subscription = {
+      email: email
+    }
+    return $http({
+      method: 'POST',
+      url: '/newsletter',
+      data: subscription
+    }).then(() => {
+      console.log('SRVC sending email')
+    });
+  };
+  
   this.removeFromCart = (item) => {
     let id = item.productId;
     return $http({
@@ -128,6 +160,17 @@ angular.module('grovemade').service('homeSrvc', function($http) {
     }).then((response) => {
       console.log('SRVC REMOVE FROM CART', response);
       return response;
+    });
+  };
+
+  this.postOrder = (token, total, cart) => {
+    console.log('SRVC TOKEN', token);
+    return $http({
+      method: 'POST',
+      url: '/order',
+      data: {token, total, cart}
+    }).then((response) => {
+      console.log('SRVC token', response);
     });
   };
 
