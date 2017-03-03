@@ -1,7 +1,12 @@
 <section class="productPage">
   <div class="productPageNav"></div>
   <div class="productPageWrapper">
-    <div class="upperCarousel"></div>
+    <div class="upperCarousel">
+      <div ng-click="previous(); stop()"><span class='ion-chevron-left'></span></div>
+      <img ng-if="base" class="baseImage" ng-src="{{currentImg}}" />
+      <img ng-if='size' class="carouselImage" ng-src="{{currentImg2}}" />
+      <div ng-click="next(); stop()"><span class='ion-chevron-right'></span></div>
+    </div>
     <div class="productDescription">
       <div>
         <div class="productTitle">
@@ -9,24 +14,99 @@
           <!--<p>{{item[0].name}}</p>-->
         </div>
         <div class="price">
-          <p>{{sizes[0].price}}</p>
+          <p>${{sizes[0].price}}</p>
         </div>
+        <p class="description">{{item[0].description}}</p>
         <div>
-          <p class="description">{{item[0].description}}</p>
-          <div>
-            <div>
-              <p class="shipDate">Ships in 4-6 weeks.</p>
-              <div class="selectAndCart">
-                <select ng-model="size" ng-options='item.size for item in sizes' ng-change="getImages(size)" class="dropdown"></select>
-                <button ng-click='addToCart(size, 1)' class="addToCart">ADD TO CART</button>
-              </div>
-              <div class="moreInfo"><p>Scroll For More Info</p></div>
-              <div><p>Orders Over $150 Ship Free (USA)</p></div>
-            </div>
+          <p class="shipDate">Ships in 4-6 weeks.</p>
+          <div class="selectAndCart">
+            <select ng-model="size" ng-options='item.size for item in sizes' ng-change="getImages(size)" class="dropdown"></select>
+            <button ng-click='addToCart(size, 1)' class="addToCart">ADD TO CART</button>
           </div>
-
+          <div class="moreInfo">
+            <p>Scroll For More Info</p>
+          </div>
+          <div class="over150">
+            <p>Orders Over $150 Ship Free (USA)</p>
+          </div>
         </div>
-        <div clas="lowerCarousel"></div>
+      </div>
+    </div>
+  </div>
 
-        <div class="techSpecs"></div>
+  <div class="lowerCarousel">
+    <div ng-click="previous2(); stop()"><span class='ion-chevron-left'></span></div>
+    <img ng-src="{{currentImg3}}" />
+    <div ng-click="next2(); stop()"><span class='ion-chevron-right'></span></div>
+  </div>
+
+  <div class="techWrapper">
+    <div class="techSpecs">
+      <div class="technical">
+        <h3 class="techTitle">Technical</h3>
+      </div>
+      <div class="specs">
+        <div class="originAndMaterials">
+          <div class="originTitle">
+            <p>ORIGIN</p>
+          </div>
+          <div class="origin">
+            <p>{{item[0].origin1}}</p>
+            <p>{{item[0].origin2}}</p>
+            <p>{{item[0].origin3}}</p>
+          </div>
+          <div class="materialsTitle">
+            <p>MATERIALS</p>
+          </div>
+          <div class="materials">
+            <p>{{item[0].material1}}</p>
+            <p>{{item[0].material2}}</p>
+            <p>{{item[0].material3}}</p>
+            <p>{{item[0].material4}}</p>
+            <p>{{item[0].material5}}</p>
+          </div>
+        </div>
+        <div class="informationAndDimensions">
+          <div class="infoTitle">
+            <p>INFORMATION</p>
+          </div>
+          <div class="information">
+            <p>{{item[0].info1}}</p>
+            <p>{{item[0].info2}}</p>
+            <p>{{item[0].info3}}</p>
+            <p>{{item[0].info4}}</p>
+            <p>{{item[0].info5}}</p>
+            <p>{{item[0].info6}}</p>
+            <p>{{item[0].info7}}</p>
+          </div>
+          <div class="dimensionsTitle">
+            <p>DIMENSIONS</p>
+          </div>
+          <div class="dimensions">
+            <p>{{item[0].dimension}}</p>
+            <p>{{item[1].dimension}}</p>
+            <p>{{item[2].dimension}}</p>
+            <p>{{item[3].dimension}}</p>
+            <p>{{item[4].dimension}}</p>
+            <p>{{item[5].dimension}}</p>
+            <p>{{item[6].dimension}}</p>
+            <p>{{item[7].dimension}}</p>
+            <p>{{item[8].dimension}}</p>
+            <p>{{item[9].dimension}}</p>
+          </div>
+        </div>
+        <div class="considerations">
+          <div class="considerationsTitle">
+            <p>CONSIDERATIONS</p>
+          </div>
+          <div class="considerationsInfo">
+            <p style="padding-bottom:7px">{{item[0].consideration1}}</p>
+            <p style="padding-bottom:7px">{{item[0].consideration2}}</p>
+            <p style="padding-bottom:7px">{{item[0].consideration3}}</p>
+            <p style="padding-bottom:7px">{{item[0].consideration4}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

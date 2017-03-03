@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "DINNextRoundedLTW01-Regular";
     src: url("./fonts/DIN Next Rounded LT W01 Regular/DIN Next Rounded LT W01 Regular.ttf");
@@ -10,6 +8,7 @@ $font: "DINNextRoundedLTW01-Regular";
 .productPageWrapper {
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid #F6F6F6;
 }
 
 .productPageNav {
@@ -20,14 +19,27 @@ $font: "DINNextRoundedLTW01-Regular";
 
 .upperCarousel {
   width: 64.7%;
-  height: 880px;
+  height: 881px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baseImage {
+  padding-top: 30px;
+  height: 750px;
+}
+
+.carouselImage {
+  padding-top: 30px;
+  height: 750px;
 }
 
 .productDescription {
   font-family: $font;
   font-size: 14px;
   width: 25.6%;
-  height: 880px;
+  height: 881px;
   display: flex;
   background-color:#F6F6F6;
   justify-content: center;
@@ -75,9 +87,150 @@ $font: "DINNextRoundedLTW01-Regular";
 }
 
 .moreInfo {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .dropdown {
   border-radius: 2px;
+}
+
+.over150 {
+  padding-top: 395px;
+}
+
+.lowerCarousel {
+  padding-top: 65px;
+  height: 940px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.techWrapper {
+  font-family: $font;
+  display: flex;
+  flex-wrap: wrap;
+  width: 99vw;
+  height: 800px;
+}
+
+.techSpecs {
+  // display: flex;
+}
+
+.technical {
+  display: flex;
+  background: #F8F8F9;
+  height: 40px;
+  width: 99vw;
+  padding-top: 40px;
+  font-size: 24px;
+}
+
+.techTitle {
+  padding-left: 350px;
+}
+
+.specs {
+  display: flex;
+  width: 99vw;
+  }
+
+.originAndMaterials {
+  background: #F8F8F9;
+  display: flex;
+  flex-direction: column;
+  width: 33vw;
+  height: 720px;
+  line-height: 200%;
+  padding-top: 40px;
+}
+
+.originTitle {
+  font-size: 12px;
+  padding-left: 350px;
+  font-weight: bold;
+}
+
+.origin {
+  padding-top: 7px;
+  padding-left: 350px;
+  font-family: Georgia;
+  font-size: 14px;
+}
+
+.materialsTitle {
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 350px;
+  padding-top: 30px;
+}
+
+.materials {
+  padding-top: 7px;
+  padding-left: 350px;
+  font-family: Georgia;
+  font-size: 14px;
+}
+
+.informationAndDimensions {
+  background: #F8F8F9;
+  display: flex;
+  flex-direction: column;
+  width: 33vw;
+  height: 720px;
+  line-height: 200%;
+  padding-top: 40px;
+}
+
+.infoTitle {
+  font-size: 12px;
+  padding-left: 175px;
+  font-weight: bold;
+}
+
+.information {
+  padding-top: 7px;
+  padding-left: 175px;
+  padding-right: 25px;
+  font-family: Georgia;
+  font-size: 14px;
+}
+
+.dimensionsTitle {
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 175px;
+  padding-top: 30px;
+}
+
+.dimensions {
+  padding-top: 7px;
+  padding-left: 175px;
+  padding-right: 25px;
+  font-family: Georgia;
+  font-size: 14px;
+}
+
+.considerations {
+  font-family: $font;
+  background: #F8F8F9;
+  display: flex;
+  flex-direction: column;
+  width: 33vw;
+  height: 720px;
+  line-height: 200%;
+  padding-top: 40px;
+}
+
+.considerationsTitle {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.considerationsInfo {
+  padding-top: 7px;
+  padding-right: 350px;
+  font-family: Georgia;
+  font-size: 14px;
 }
