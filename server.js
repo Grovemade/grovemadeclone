@@ -7,7 +7,7 @@ const config = require('./config');
 const nodemailer = require('nodemailer');
 const xoauth2 = require('xoauth2');
 const bunyan = require('bunyan');
-// const port = 3050;
+const port = config.port;
 const stripe = require("stripe")("sk_test_YWeRVnmViJfikag0T9Z4QH6m");
 
 
