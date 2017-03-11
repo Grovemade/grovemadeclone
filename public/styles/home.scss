@@ -1,11 +1,12 @@
 
-@font-face {
-   font-family: "DINNextRoundedLTW01-Regular";
-   src: url("fonts/dnNext/dnNext.ttf");
-}
-$font: "DINNextRoundedLTW01-Regular";
+// @font-face {
+//    font-family: "DINNextRoundedLTW01-Regular";
+//    src: url("fonts/dnNext/dnNext.ttf");
+// }
+// $font: "DINNextRoundedLTW01-Regular";
 $condensed: 'Open Sans Condensed', sans-serif;
 $ropa: 'Ropa Sans', sans-serif;
+$abel: 'Abel', sans-serif;
 $hover: rgba(255,255,255,0.3);
 
 
@@ -14,14 +15,14 @@ $hover: rgba(255,255,255,0.3);
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 525px;
+  width: 595px;
   // height: px;
   word-wrap: break-word;
   // text-shadow: 1px 1px 4px #000;
   // background-color: aqua;
-  font-size: 90px;
-  letter-spacing: 2.3px;
-  font-family: $font;
+  font-size: 95px;
+  letter-spacing: 14px;
+  font-family: $abel;
   text-align: center;
   overflow: auto;
 }
@@ -48,7 +49,7 @@ $hover: rgba(255,255,255,0.3);
   // text-shadow: 1px 1px 4px #000;
   font-size: 20px;
   letter-spacing: 7.3px;
-  font-family: $font;
+  font-family: $ropa;
   padding-top: 35px;
   padding-bottom: 35px;
 }

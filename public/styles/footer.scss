@@ -1,12 +1,16 @@
 
-@font-face {
-   font-family: "DINNextRoundedLTW01-Regular";
-   src: url("fonts/dnNext/dnNext.ttf");
-}
+// @font-face {
+//    font-family: "DINNextRoundedLTW01-Regular";
+//    src: url("fonts/dnNext/dnNext.ttf");
+// }
 
 
 $footer: rgb(74, 77, 81);
 $font: "DINNextRoundedLTW01-Regular";
+$ropa:  'Ropa Sans', sans-serif;
+$abel: 'Abel', sans-serif;
+$condensed: 'Open Sans Condensed', sans-serif;
+
 
 
 
@@ -33,7 +37,7 @@ footer {
   }
   p {
     font-size: 11px;
-    font-family: $font;
+    font-family: $ropa;
     letter-spacing: 2px;
     margin-top: 20px;
   }
@@ -51,7 +55,7 @@ footer {
     border: none;
     border-bottom: 1px solid white;
     font-size: 20px;
-    font-family: $font;
+    font-family: $ropa;
     min-width: 275px;
     padding: 10px 20px;
     padding-left: 0;
@@ -120,7 +124,7 @@ footer {
   border-top: 1px solid #808080;
   border-bottom: 1px solid white;
   color: white;
-  font-family: $font;
+  font-family: $ropa;
   .footer-bar-left {
     float: left;
     text-align: left;
