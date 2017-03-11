@@ -6,6 +6,9 @@
 
 
 $font: "DINNextRoundedLTW01-Regular";
+$ropa:  'Ropa Sans', sans-serif;
+$abel: 'Abel', sans-serif;
+$condensed: 'Open Sans Condensed', sans-serif;
 $cartgrey: #bcbec0;
 
 
@@ -20,8 +23,8 @@ $cartgrey: #bcbec0;
   width: 100vw;
   height: 70px;
   font-size: 15px;
-  letter-spacing: 1.3px;
-  font-family: $font;
+  letter-spacing: 4px;
+  font-family: $ropa;
   position: relative;
 }
 
@@ -51,12 +54,12 @@ $cartgrey: #bcbec0;
 .cart-container {
   margin-left: auto;
   margin-right: auto;
-  font-family: $font;
+  font-family: $ropa;
   color: #424242;
   font-weight: 200;
   font-size: 12px;
   line-height: 18px;
-  letter-spacing: .1em;
+  letter-spacing: 3px;
   padding-left: 4.321%;
   padding-right: 4.321%;
   display: flex;

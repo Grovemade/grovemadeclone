@@ -1,10 +1,13 @@
 
-@font-face {
-   font-family: "DINNextRoundedLTW01-Regular";
-   src: url("fonts/dnNext/dnNext.ttf");
-}
+// @font-face {
+//    font-family: "DINNextRoundedLTW01-Regular";
+//    src: url("fonts/dnNext/dnNext.ttf");
+// }
 
 $font: "DINNextRoundedLTW01-Regular";
+$ropa:  'Ropa Sans', sans-serif;
+$abel: 'Abel', sans-serif;
+$condensed: 'Open Sans Condensed', sans-serif;
 $grey: #878789;
 $info: #d9dbdc;
 // header div----start-start-----starts
@@ -19,9 +22,9 @@ $info: #d9dbdc;
     background-position: center center;
     background-size: cover;
     h1{
-      font-family: $font;
+      font-family: $ropa;
       color: white;
-      font-size: 60px;
+      font-size: 62px;
       letter-spacing: 0.4em;
       font-weight: 100;
     }
@@ -45,8 +48,8 @@ $info: #d9dbdc;
       p{
         padding: 13px;
         color: white;
-        font-family: $font;
-        font-size: 12px;
+        font-family: $ropa;
+        font-size: 14px;
         letter-spacing: .4em;
         font-weight: 100;
         text-align: left;
@@ -87,8 +90,8 @@ $info: #d9dbdc;
       p{
         padding: 13px;
         color: white;
-        font-family: $font;
-        font-size: 12px;
+        font-family: $ropa;
+        font-size: 14px;
         letter-spacing: .4em;
         font-weight: 100;
         text-align: left;
@@ -110,7 +113,7 @@ $info: #d9dbdc;
         // background-color: red;
         p{
           // float: left;
-          font-size: 12px;
+          font-size: 14px;
           cursor: pointer;
           color: black;
         }
@@ -144,8 +147,8 @@ $info: #d9dbdc;
       p{
         padding: 13px;
         color: white;
-        font-family: $font;
-        font-size: 12px;
+        font-family: $ropa;
+        font-size: 14px;
         letter-spacing: .4em;
         font-weight: 100;
         text-align: left;
@@ -224,8 +227,8 @@ $info: #d9dbdc;
   position: absolute;
   bottom: 50px;
   h4 {
-    font-size: 12px;
-    font-family: $font;
+    font-size: 14px;
+    font-family: $ropa;
     letter-spacing: 3px;
     font-weight: 100;
     color: $grey;
@@ -233,8 +236,8 @@ $info: #d9dbdc;
     margin-bottom: 8px;
   }
   p {
-    font-size: 10px;
-    font-family: $font;
+    font-size: 11px;
+    font-family: $ropa;
     letter-spacing: 1.3px;
     font-weight: 100;
     color: $info;
