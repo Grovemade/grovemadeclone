@@ -1,10 +1,15 @@
 
-@font-face {
-   font-family: "DINNextRoundedLTW01-Regular";
-   src: url("fonts/dnNext/dnNext.ttf");
-}
+// @font-face {
+//    font-family: "DINNextRoundedLTW01-Regular";
+//    src: url("fonts/dnNext/dnNext.ttf");
+// }
 
 $font: "DINNextRoundedLTW01-Regular";
+$ropa:  'Ropa Sans', sans-serif;
+$abel: 'Abel', sans-serif;
+$condensed: 'Open Sans Condensed', sans-serif;
+$grey: #878789;
+$info: #d9dbdc;
 
 .about-header{
 background: url("/img/about-2016-C3_2.jpg");
@@ -20,19 +25,22 @@ background-size: cover;
 }
 
 #stylize-headers {
-font-family: $font;
+font-family: $abel;
 font-size: 48px;
 font-weight: lighter;
 color: #494c51;
 text-align: center;
+letter-spacing: 3px;
 margin: 0 170px;
 }
+
 #stylize-p {
-font-family: $font;
+font-family: $abel;
 text-align: center;
 color: #939393;
-line-height: 200%;
-font-size: 16px;
+line-height: 1.9;
+font-size: 17px;
+letter-spacing: .5px;
 width: 50%;
 float: none;
 margin: auto;
@@ -83,6 +91,9 @@ margin-bottom: 145px;
 }
 .italicized-sentence {
   font-style: italic;
+  font-size: 17px;
+  letter-spacing: .2px;
+  font-family: $abel;
 }
 
 //IMAGE CLASSES
