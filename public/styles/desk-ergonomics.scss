@@ -1,21 +1,16 @@
 
-@font-face {
-   font-family: "DINNextRoundedLTW01-Regular";
-   src: url("fonts/dnNext/dnNext.ttf");
-}
-
-@import url(//db.onlinewebfonts.com/c/9ae5e19516bc6428f1327ff3311b2617?family=DINNextW01-Light);
-@font-face {font-family: "DINNextW01-Light";
-    src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot");
-    src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.svg#DINNextW01-Light") format("svg");
-}
+// @font-face {
+//    font-family: "DINNextRoundedLTW01-Regular";
+//    src: url("fonts/dnNext/dnNext.ttf");
+// }
 
 $font: "DINNextRoundedLTW01-Regular";
 $font2: "DINNextW01-Light";
+$ropa:  'Ropa Sans', sans-serif;
+$abel: 'Abel', sans-serif;
+$condensed: 'Open Sans Condensed', sans-serif;
+$grey: #878789;
+$info: #d9dbdc;
 
 .ergonomics-header{
   background: url('/img/collections-cover-walnutdesk-D2_2.jpg');
@@ -32,21 +27,21 @@ $font2: "DINNextW01-Light";
   align-items: center;
   margin-top: 37px;
   h3{
-    font-family: $font;
+    font-family: $abel;
     font-size: 28px;
     letter-spacing: .4em;
     line-height: 34px;
     font-weight: 100;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px;
   }
   p{
     width: 50%;
     margin-top: 35px;
     margin-bottom: 38px;
-    font-family: $font2;
+    font-family: $abel;
     font-size: 16px;
-    letter-spacing: 0;
+    letter-spacing: .6px;
     line-height: 200%;
     color:#939393;
   }
@@ -78,7 +73,7 @@ $font2: "DINNextW01-Light";
   button{
     font-size: 12px;
     letter-spacing: .2em;
-    font-family: $font;
+    font-family: $ropa;
     line-height: 34px;
     cursor: pointer;
     border: 3px solid #424242;
