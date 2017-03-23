@@ -1,22 +1,27 @@
 
 // @import url('../styles/fonts/DIN Next Rounded LT W01 Regular/DIN Next Rounded LT W01 Regular.ttf');
-@font-face {
-   font-family: "DINNextRoundedLTW01-Regular";
-   src: url("fonts/dnNext/dnNext.ttf");
-}
+// @font-face {
+//    font-family: "DINNextRoundedLTW01-Regular";
+//    src: url("fonts/dnNext/dnNext.ttf");
+// }
 
-@import url(//db.onlinewebfonts.com/c/9ae5e19516bc6428f1327ff3311b2617?family=DINNextW01-Light);
-@font-face {font-family: "DINNextW01-Light";
-    src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot");
-    src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.svg#DINNextW01-Light") format("svg");
-}
+// @import url(//db.onlinewebfonts.com/c/9ae5e19516bc6428f1327ff3311b2617?family=DINNextW01-Light);
+// @font-face {font-family: "DINNextW01-Light";
+//     src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot");
+//     src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot?#iefix") format("embedded-opentype"),
+//     url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff2") format("woff2"),
+//     url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff") format("woff"),
+//     url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.ttf") format("truetype"),
+//     url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.svg#DINNextW01-Light") format("svg");
+// }
 
 $font: "DINNextRoundedLTW01-Regular";
 $font2: "DINNextW01-Light";
+$ropa:  'Ropa Sans', sans-serif;
+$abel: 'Abel', sans-serif;
+$condensed: 'Open Sans Condensed', sans-serif;
+$grey: #878789;
+
 
 .journal-header{
     display: flex;
@@ -28,10 +33,10 @@ $font2: "DINNextW01-Light";
     background-position: center center;
     background-size: cover;
     h1{
-      font-family: $font;
+      font-family: $ropa;
       color: white;
       font-size: 60px;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.4em;
       font-weight: 100;
     }
 }
@@ -44,11 +49,14 @@ $font2: "DINNextW01-Light";
   justify-content: center;
   align-items: center;
   p{
-    margin-left: 22%;
-    margin-right: 22%;
+    margin-left: 17%;
+    margin-right: 17%;
     text-align: center;
-    font-size: 13px;
-    font-family: $font2;
+    font-size: 12px;
+    font-family: $abel;
+    font-weight: lighter;
+    line-height: 1.5;
+    letter-spacing: 2px;
   }
 }
 
@@ -71,11 +79,14 @@ $font2: "DINNextW01-Light";
     padding: 2vw;
     z-index: 8;
 
-    .journal-title{
-      width: 66%;
-      font-family: $font2;
+    .journal-heading{
+      width: 59%;
+      font-family: $abel;
+      font-weight: 300;
       color: white;
-      font-size: 23px;
+      font-size: 17px;
+      letter-spacing: 3px;
+      line-height: 1.5;
       z-index: 10;
     }
   }
