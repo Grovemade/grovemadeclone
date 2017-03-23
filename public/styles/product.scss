@@ -1,9 +1,15 @@
-@font-face {
-   font-family: "DINNextRoundedLTW01-Regular";
-   src: url("fonts/dnNext/dnNext.ttf");
-}
+// @font-face {
+//    font-family: "DINNextRoundedLTW01-Regular";
+//    src: url("fonts/dnNext/dnNext.ttf");
+// }
 
 $font: "DINNextRoundedLTW01-Regular";
+$ropa:  'Ropa Sans', sans-serif;
+$abel: 'Abel', sans-serif;
+$condensed: 'Open Sans Condensed', sans-serif;
+$grey: #878789;
+$info: #d9dbdc;
+
 
 .productPageWrapper {
   display: flex;
@@ -19,53 +25,75 @@ $font: "DINNextRoundedLTW01-Regular";
 
 .upperCarousel {
   width: 64.7%;
-  height: 881px;
+  height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
+  span{
+    color: $info;
+    font-size: 20px;
+  }
+}
+
+#left-arrow{
+  padding-left: 0;
+  padding-right: 60px;
+}
+
+#right-arrow{
+  padding-right: 0;
+  padding-left: 60px;
 }
 
 .baseImage {
-  padding-top: 30px;
-  height: 750px;
+  // padding-top: 30px;
+  height: 560px;
 }
 
 .carouselImage {
-  padding-top: 30px;
-  height: 750px;
+  // padding-top: 30px;
+  height: 560px;
 }
 
 .productDescription {
-  font-family: $font;
-  font-size: 14px;
+  font-family: $abel;
+  font-size: 15px;
   width: 25.6%;
-  height: 881px;
+  height: 650px;
   display: flex;
   background-color:#F6F6F6;
   justify-content: center;
   align-items: center;
   padding-left: 45px;
   padding-right: 85px;
+  h2{
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-family: $abel;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
 }
 
 .productTitle {
   // font-size: 28px; left here on purpose! CH
-  font-size: 24px;
-  padding-bottom: 20px;
   // font-family: Georgia; left here on purpose! CH
 }
 
 .price {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-family: $abel;
   font-size: 14px;
 }
 
 .description {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  letter-spacing: .5px;
 }
 
 .shipDate {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .selectAndCart {
@@ -87,7 +115,7 @@ $font: "DINNextRoundedLTW01-Regular";
 }
 
 .moreInfo {
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .dropdown {
@@ -95,66 +123,77 @@ $font: "DINNextRoundedLTW01-Regular";
 }
 
 .over150 {
-  padding-top: 395px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
 }
 
 .lowerCarousel {
   padding-top: 65px;
-  height: 940px;
+  max-width: 100vw;
+  // height: 940px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  img {
+    width: 90%;
+  }
+  span{
+    color: $info;
+    font-size: 25px;
+  }
 }
 
 .techWrapper {
-  font-family: $font;
-  display: flex;
-  flex-wrap: wrap;
-  width: 99vw;
-  height: 800px;
+  font-family: $ropa;
+  max-width: 100vw;
+  background: #F8F8F9;
+  overflow: contain;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .techSpecs {
-  // display: flex;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  width: 80vw;
 }
 
 .technical {
-  display: flex;
-  background: #F8F8F9;
-  height: 40px;
-  width: 99vw;
+  width: 100%;
+  text-align: left;
   padding-top: 40px;
   font-size: 24px;
 }
 
 .techTitle {
-  padding-left: 350px;
+  font-family: $abel
 }
 
 .specs {
   display: flex;
-  width: 99vw;
+  justify-content: space-around;
+  width: 100%;
   }
 
 .originAndMaterials {
   background: #F8F8F9;
   display: flex;
   flex-direction: column;
-  width: 33vw;
-  height: 720px;
+  width: 30%;
   line-height: 200%;
   padding-top: 40px;
 }
 
 .originTitle {
   font-size: 12px;
-  padding-left: 350px;
   font-weight: bold;
+  font-family: $abel;
+  color: $grey;
 }
 
 .origin {
   padding-top: 7px;
-  padding-left: 350px;
   font-family: Georgia;
   font-size: 14px;
 }
@@ -162,13 +201,13 @@ $font: "DINNextRoundedLTW01-Regular";
 .materialsTitle {
   font-size: 12px;
   font-weight: bold;
-  padding-left: 350px;
   padding-top: 30px;
+  font-family: $abel;
+  color: $grey;
 }
 
 .materials {
   padding-top: 7px;
-  padding-left: 350px;
   font-family: Georgia;
   font-size: 14px;
 }
@@ -177,22 +216,20 @@ $font: "DINNextRoundedLTW01-Regular";
   background: #F8F8F9;
   display: flex;
   flex-direction: column;
-  width: 33vw;
-  height: 720px;
+  width: 30%;
   line-height: 200%;
   padding-top: 40px;
 }
 
 .infoTitle {
   font-size: 12px;
-  padding-left: 175px;
   font-weight: bold;
+  font-family: $abel;
+  color: $grey;
 }
 
 .information {
   padding-top: 7px;
-  padding-left: 175px;
-  padding-right: 25px;
   font-family: Georgia;
   font-size: 14px;
 }
@@ -200,25 +237,23 @@ $font: "DINNextRoundedLTW01-Regular";
 .dimensionsTitle {
   font-size: 12px;
   font-weight: bold;
-  padding-left: 175px;
   padding-top: 30px;
+  font-family: $abel;
+  color: $grey;
 }
 
 .dimensions {
   padding-top: 7px;
-  padding-left: 175px;
-  padding-right: 25px;
   font-family: Georgia;
   font-size: 14px;
 }
 
 .considerations {
-  font-family: $font;
+  font-family: $ropa;
   background: #F8F8F9;
   display: flex;
   flex-direction: column;
-  width: 33vw;
-  height: 720px;
+  width: 30%;
   line-height: 200%;
   padding-top: 40px;
 }
@@ -226,11 +261,12 @@ $font: "DINNextRoundedLTW01-Regular";
 .considerationsTitle {
   font-size: 12px;
   font-weight: bold;
+  font-family: $abel;
+  color: $grey;
 }
 
 .considerationsInfo {
   padding-top: 7px;
-  padding-right: 350px;
   font-family: Georgia;
   font-size: 14px;
 }
