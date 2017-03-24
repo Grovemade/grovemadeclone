@@ -1,12 +1,11 @@
 
-// @import url('../styles/fonts/DIN Next Rounded LT W01 Regular/DIN Next Rounded LT W01 Regular.ttf');
-@font-face {
-   font-family: "DINNextRoundedLTW01-Regular";
-   src: url("fonts/dnNext/dnNext.ttf");
-}
-
 
 $font: "DINNextRoundedLTW01-Regular";
+$ropa:  'Ropa Sans', sans-serif;
+$abel: 'Abel', sans-serif;
+$condensed: 'Open Sans Condensed', sans-serif;
+$grey: #878789;
+$info: #d9dbdc;
 
 .vday-header {
 background: url("/img/homemarq-walnut-desk-collection-C2.jpg");
@@ -19,26 +18,27 @@ background-size: cover;
 .journal-title {
   padding-top: 75px;
   padding-bottom: 75px;
-  font-family: $font;
+  font-family: $ropa;
   font-size: 28px;
   color: #494c51;
   display: flex;
   align-content: center;
   justify-content: center;
-  letter-spacing: .4em;
+  letter-spacing: .3em;
 }
 
 .journal-text {
   flex-direction: column;
   padding-left: 33%;
   padding-right: 33%;
-  font-family: $font;
-  font-size: 16px;
+  font-family: $abel;
+  font-size: 17px;
   color: #939393;
   display: flex;
   align-content: center;
   justify-content: center;
   line-height: 200%;
+  letter-spacing: .6px;
 }
 
 .paragraph {
