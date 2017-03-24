@@ -1,8 +1,10 @@
-@font-face {
-   font-family: "DINNextRoundedLTW01-Regular";
-   src: url("fonts/dnNext/dnNext.ttf");
-}
+
 $font: "DINNextRoundedLTW01-Regular";
+$ropa:  'Ropa Sans', sans-serif;
+$abel: 'Abel', sans-serif;
+$condensed: 'Open Sans Condensed', sans-serif;
+$grey: #878789;
+$info: #d9dbdc;
 
 .caseBuyer-header {
 background: url("/img/iphone-buyers-guide-cover-C1.jpg");
@@ -15,21 +17,22 @@ background-size: cover;
 .journal-title {
   padding-top: 75px;
   padding-bottom: 75px;
-  font-family: $font;
-  font-size: 28px;
+  font-family: $ropa;
+  font-size: 30px;
   color: #494c51;
   display: flex;
   align-content: center;
   justify-content: center;
-  letter-spacing: .4em;
+  letter-spacing: .3em;
 }
 
 .intro {
   flex-direction: column;
-  padding-left: 30%;
-  padding-right: 30%;
-  font-family: $font;
-  font-size: 15.5px;
+  padding-left: 28%;
+  padding-right: 28%;
+  font-family: $abel;
+  letter-spacing: .7px;
+  font-size: 17px;
   color: #939393;
   display: flex;
   align-content: center;
@@ -40,10 +43,11 @@ background-size: cover;
 
 .intro-2 {
   flex-direction: column;
-  padding-left: 30%;
-  padding-right: 30%;
-  font-family: $font;
-  font-size: 15.5px;
+  padding-left: 28%;
+  padding-right: 28%;
+  font-family: $abel;
+  letter-spacing: .7px;
+  font-size: 17px;
   color: #939393;
   display: flex;
   align-content: center;
@@ -64,13 +68,13 @@ background-size: cover;
 }
 
 .buyer-title {
-  font-family: $font;
+  font-family: $ropa;
   color: #494c51;
   font-size: 28px;
   display: flex;
   align-content: center;
   justify-content: center;
-  letter-spacing: .4em;
+  letter-spacing: .3em;
   padding-left: 40px;
   padding-bottom: 25px;
 }
@@ -104,54 +108,50 @@ background-size: cover;
 }
 
 .buyer-description {
-  font-family: $font;
+  font-family: $abel;
   color: #939393;
-  font-size: 15.5px;
+  font-size: 17px;
+  letter-spacing: .7px;
   width: 600px;
-  line-height: 200%;
-}
-
-.description {
+  line-height: 1.8;
+  p {
   padding-bottom: 20px;
-}
-
-.pro-con {
-  padding-bottom: 25px;
-}
-
-.pro {
-  padding-bottom: 5px;
-}
-
-.con {
-  padding-bottom: 7px;
-}
-
-.recommendation {
-  padding-bottom: 85px;
-}
-
-.recommendation-2 {
-  padding-bottom: 100px;
+  }
+  .pro-con {
+    padding-bottom: 25px;
+  }
+  .pro {
+    padding-bottom: 5px;
+  }
+  .con {
+    padding-bottom: 7px;
+  }
+  .recommendation {
+    padding-bottom: 85px;
+  }
+  .recommendation-2 {
+    padding-bottom: 100px;
+  }
 }
 
 .links-wrapper {
   color: #494c51;
-  font-family: $font;
-  font-size: 15.5px;
+  font-family: $abel;
+  letter-spacing: .7px;
+  font-size: 17px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .buyer-title-2 {
-  font-family: $font;
+  font-family: $ropa;
   color: #494c51;
   font-size: 28px;
   display: flex;
   align-content: center;
   justify-content: center;
-  letter-spacing: .4em;
+  letter-spacing: .3em;
   padding-left: 40px;
   padding-bottom: 50px;
 }
@@ -160,13 +160,14 @@ background-size: cover;
   display: flex;
   justify-content: center;
   padding-bottom: 85px;
+  color: #939393;
 }
 
 .anchor-tag {
   text-decoration: none;
+  color: #424242;
 }
 
 .anchor-tag:hover {
-  color: red;
   cursor: pointer;
 }

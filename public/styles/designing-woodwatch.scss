@@ -1,23 +1,10 @@
 
-@font-face {
-   font-family: "DINNextRoundedLTW01-Regular";
-   src: url("fonts/dnNext/dnNext.ttf");
-}
-
-@import url(//db.onlinewebfonts.com/c/9ae5e19516bc6428f1327ff3311b2617?family=DINNextW01-Light);
-@font-face {font-family: "DINNextW01-Light";
-    src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot");
-    src: url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.svg#DINNextW01-Light") format("svg");
-}
-
-
-
 $font: "DINNextRoundedLTW01-Regular";
 $font2: "DINNextW01-Light";
+$ropa:  'Ropa Sans', sans-serif;
+$abel: 'Abel', sans-serif;
+$condensed: 'Open Sans Condensed', sans-serif;
+$grey: #878789;
 
 .woodwatchHeader {
   background: url('/img/journal-designing-wood-watch-cover-A1.jpg');
@@ -33,12 +20,12 @@ $font2: "DINNextW01-Light";
   flex-direction: column;
   align-items: center;
   h3 {
-    font-family: $font;
+    font-family: $ropa;
     font-weight: 100;
     display: flex;
     justify-content: center;
-    font-size: 28px;
-    letter-spacing: .4em
+    font-size: 30px;
+    letter-spacing: .3em
       }
     .woodwatch-title {
       align-items: center;
@@ -46,13 +33,15 @@ $font2: "DINNextW01-Light";
       margin-bottom: 70px;
     }
     .woodwatch-intro {
-      font-family: $font;
+      font-family: $abel;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 16px;
+      font-size: 17px;
       line-height: 200%;
+      text-align: center;
       font-style: italic;
+      letter-spacing: .5px;
       width: 50%;
       margin-bottom: 60px;
     }
@@ -74,7 +63,7 @@ $font2: "DINNextW01-Light";
       text-align: center;
       letter-spacing: 4px;
       border: solid #424242;
-      font-family: $font;
+      font-family: $ropa;
       margin-bottom: 50px;
       width: 17%;
       height: auto;
@@ -92,8 +81,9 @@ $font2: "DINNextW01-Light";
         }
     }
     p {
-      font-family: $font;
-      font-size: 16px;
+      font-family: $abel;
+      font-size: 17px;
+      letter-spacing: .5px;
       line-height: 32px;
       color: #939393;
       width: 50%;
