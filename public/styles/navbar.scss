@@ -74,10 +74,12 @@ $condensed: 'Open Sans Condensed', sans-serif;
 .sliding-u-t-b {
   border-bottom: 0px solid transparent;
   transition: 0.5s ease;
+  outline: none;
 }
 .sliding-u-t-b:focus {
   border-bottom: 2px solid white;
   padding-bottom: 2px;
+  padding-left: 3px;
   border-radius: .7px;
 }
 .nav-bar-wrapper {
@@ -107,6 +109,7 @@ $condensed: 'Open Sans Condensed', sans-serif;
 }
 .nav-cart {
   color: white;
+  cursor: pointer;
   // font-size: 18px;
   float: right;
   position: relative;
@@ -117,6 +120,7 @@ $condensed: 'Open Sans Condensed', sans-serif;
   overflow: auto;
 }
 .nav-cart-total {
+  cursor: pointer;
   float: right;
   position: relative;
   color: white;

@@ -18,23 +18,11 @@ angular.module('grovemade').directive('navbar', () => {
       });
 
       $('.newsletter-open').on('click', function() {
-        // isActive = !isActive;
-      	// if (isActive) {
-          // console.log(isActive);
           $('.newsletter-wrapper').removeClass('hide-newsletter');
-      	// } else {
-      		// $('.newsletter-wrapper').addClass('hide-newsletter');
-      	// }
-
       });
 
       $('.newsletter-close').on('click', function() {
-        // isActive = !isActive;
-      	// if (!isActive) {
           $('.newsletter-wrapper').addClass('hide-newsletter');
-      	// } else {
-      		// $('.newsletter-wrapper').removeClass('hide-newsletter');
-      	// }
       });
 
       $('.nav-cart').on('mouseover',function(){
@@ -45,9 +33,9 @@ angular.module('grovemade').directive('navbar', () => {
       })
 
       $scope.submitEmail = function(email){
-        console.log(email);
+        // console.log(email);
         homeSrvc.submitEmail(email).then(function(response){
-          console.log(response.data);
+          // console.log(response.data);
         });
       };
 

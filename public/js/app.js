@@ -69,5 +69,11 @@ angular.module('grovemade', ['ui.router'])
     templateUrl: '/templates/checkout.html',
     controller: 'checkoutCtrl'
   })
-
 })
+.run(function ($rootScope, $state, $stateParams, $anchorScroll) {
+
+    $rootScope.$on('$stateChangeStart', function () {
+        $anchorScroll();
+    });
+
+});

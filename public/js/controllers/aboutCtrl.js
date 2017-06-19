@@ -4,13 +4,11 @@ angular.module('grovemade')
 
   homeSrvc.getAboutPage().then((response) => {
     $scope.employees = response.data;
-    console.log('CTRL', $scope.employees);
   })
 
   $scope.showEmployee=function(id){
     homeSrvc.getAttributes(id).then(function(res){
       $scope.attributes = res.data;
-      console.log(res.data);
     })
   }
 
@@ -29,11 +27,9 @@ angular.module('grovemade')
        scrollTop: $("body").offset().top + 1850
    }, 800);
    for(var j = 6; j < 12; j++){
-     console.log('first');
      $('#test' + j).addClass('moveDown animated slideInDown')
    }
    for(var j = 12; j < 18; j++){
-     console.log('second', j);
      $('#test' + j).removeClass('moveDown')
    }
     $('.our-story').removeClass('moveDown animated slideInDown')

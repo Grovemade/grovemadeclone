@@ -14,7 +14,6 @@ const stripe = require("stripe")("sk_test_YWeRVnmViJfikag0T9Z4QH6m");
 const app = module.exports = express();
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public' ));
-// console.log(__dirname);
 app.use(session({
   secret: config.sessionSecret,
   resave: false,

@@ -7,21 +7,17 @@ angular.module('grovemade')
 
     homeSrvc.getProduct($stateParams.id).then((response) => {
       $scope.item = response.data;
-      console.log('DETAILs', $scope.item);
       $scope.currentImg = $scope.item[0].image1 || $scope.item[0].image2;
     });
 
     homeSrvc.getCarousel($stateParams.id).then((response) => {
-      console.log('PRODUCT ID', $stateParams.id);
       $scope.carousels = response.data;
-      console.log('CAROUSEL', $scope.carousels);
       $scope.currentImg3 = $scope.carousels[0].url;
       $scope.imageIndex2 = 0;
     });
 
     homeSrvc.getSizes($stateParams.id).then((response) => {
       $scope.sizes = response.data;
-      console.log('SIZES', $scope.sizes);
     });
 
     $scope.getImages = (size) => {
@@ -101,7 +97,7 @@ angular.module('grovemade')
     }
 
     $scope.addToCart = (size, productQuantity) => {
-      console.log('SIZE', size);
+      // console.log('SIZE', size);
       $rootScope.cartTotal += Number(productQuantity);
       let productId = $scope.item[0].product_id;
       let productName = $scope.item[0].name;
