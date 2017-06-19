@@ -4,7 +4,6 @@ angular.module('grovemade')
 
   homeSrvc.getJournal().then((response) => {
     $scope.journal = response.data;
-    console.log('CTRL', $scope.journal);
   })
   // upon hover, the selected index is pushing the animate.css  fade to the covering array
 $scope.covering = [];

@@ -1,4 +1,4 @@
-<section class='cart-page-wrapper'>
+<section class='cart-page-wrapper' id='cart-page'>
   <div class="productPageNav"></div>
   <div class='shopping-header'>
     <p class='cart-link'>CART</p>
@@ -50,6 +50,24 @@
     </div>
   </div>
   {{totalQuantity}}
+</section>
 
-
+<section class='cart-page-wrapper' id='empty-cart'>
+  <div class="productPageNav"></div>
+  <div class='shopping-header'>
+    <p class='cart-link'>CART</p>
+    <p><span class='shopping-link' ui-sref='shop'>CONTINUE SHOPPING</span></p>
+  </div>
+  <div class='top-line'></div>
+  <div class='cart-container'>
+    <div class='cart-content-wrapper'>
+      <div class='shipping-box'>
+        <div class='shipping-box-text'>FREE SHIPPING ON ORDERS OVER $150 (U.S.A. ONLY)</div>
+      </div>
+      <div class='empty-cart-text'>
+        <p>Your cart is empty</p>
+        <button class='empty-cart-button' ui-sref='shop'>BACK TO SHOP</button>
+      </div>
+    </div>
+  </div>
 </section>

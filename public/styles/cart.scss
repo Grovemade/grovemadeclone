@@ -175,6 +175,7 @@ ul {
 }
 
 .cart-remove-btn {
+  cursor: pointer;
   width: 10%;
   float: left;
   text-align: left;
@@ -242,4 +243,37 @@ ul {
 }
 .checkout-btn:focus {
   outline: none;
+}
+
+#empty-cart {
+  display: none;
+}
+
+.empty-cart-text {
+  text-align: center;
+  p {
+    font-family: $abel;
+    font-size: 25px;
+    letter-spacing: 7px;
+    margin: 40px 0 25px 0;
+    text-transform: uppercase;
+  }
+  button {
+    border: 3px solid #424242;
+    background: white;
+    color: #424242;
+    cursor: pointer;
+    font-family: $ropa;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .2em;
+    padding: 9px 23px 8px 23px;
+  }
+  button:hover {
+    background: #424242;
+    color: white;
+  }
+  button:focus {
+    outline: none;
+  }
 }

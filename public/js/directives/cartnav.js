@@ -8,8 +8,8 @@ angular.module('grovemade').directive('cartnav', () => {
       $rootScope.cartTotal = 0;
 
       $rootScope.$watch('cartTotal', function(){
-        console.log('it changed');
-        console.log($rootScope.cartTotal);
+        // console.log('it changed');
+        // console.log($rootScope.cartTotal);
         $scope.totalItems = $rootScope.cartTotal
       });
 

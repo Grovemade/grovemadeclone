@@ -8,6 +8,15 @@ $condensed: 'Open Sans Condensed', sans-serif;
 $grey: #878789;
 $info: #d9dbdc;
 // header div----start-start-----starts
+
+a {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
 .shop-header{
     position: relative;
     display: flex;
@@ -234,10 +243,10 @@ $info: #d9dbdc;
   }
   p {
     font-size: 11px;
-    font-family: $ropa;
+    font-family: $abel;
     letter-spacing: 1.3px;
     font-weight: 100;
-    color: $info;
+    color: #bcbec0;
   }
   .dash {
     margin: 0 8px;
@@ -272,6 +281,7 @@ $info: #d9dbdc;
 }
 
 .product-link{
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;

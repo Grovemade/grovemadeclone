@@ -7,13 +7,14 @@ angular.module('grovemade')
   let cartSubtotal = () => {
     // console.log('running cartTotal', $scope.cart);
     if (!$scope.cart || $scope.cart.length === 0) {
+      document.getElementById('cart-page').style.display = "none";
+      document.getElementById('empty-cart').style.display = "block";
       $scope.cart = [];
       $scope.subtotal = 0;
     } else {
       $scope.cart.forEach((element, index) => {
-        // console.log('EACH', element);
         $scope.subtotal += parseInt(element.size.price) * parseInt(element.productQuantity);
-        console.log('SUBTOTAL', $scope.subtotal);
+        // console.log('SUBTOTAL', $scope.subtotal);
       });
     };
   };
@@ -23,15 +24,12 @@ angular.module('grovemade')
     for (let i = 0; i < $scope.cart.length; i++) {
       $scope.totalItems += Number($scope.cart[i].productQuantity);
     }
-    console.log($scope.totalItems);
     return $scope.totalItems;
   };
 
   homeSrvc.getCart().then((response) => {
     $scope.cart = response.data;
-    console.log('Cart CTRL', $scope.cart);
     $scope.test = $scope.cart;
-    console.log('size', $scope.test.size);
     cartSubtotal();
   }).catch((err) => {
     console.log(err);
@@ -44,7 +42,6 @@ angular.module('grovemade')
     homeSrvc.updateQuantity(item.productId, item.productQuantity);
       homeSrvc.getCart().then((response) => {
         $scope.cart = response.data;
-        // console.log($scope.cart);
         $scope.subtotal = 0;
         cartSubtotal();
       }).catch((err) => {
@@ -72,7 +69,7 @@ angular.module('grovemade')
     image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
     locale: 'auto',
     token: function(token) {
-      console.log('CTRL Token', token)
+      // console.log('CTRL Token', token)
       // You can access the token ID with `token.id`.
       // Get the token ID to your server-side code for use.
       homeSrvc.postOrder(token, $scope.subtotal*100, $scope.cart);
